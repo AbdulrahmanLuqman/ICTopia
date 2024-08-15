@@ -1,7 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    backgroundImage: {
+      news: 'url(./src/images/news.jpg)',
+      event1: 'url(./src/images/event1.jpg)',
+      event2: 'url(./src/images/event2.jpg)',
+      event3: 'url(./src/images/event3.jpg)',
+      map: 'url(./src/images/map.jpg)',
+    },
     extend: {},
   },
   plugins: [require('daisyui')],
