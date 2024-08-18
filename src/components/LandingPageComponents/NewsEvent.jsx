@@ -47,11 +47,11 @@ const NewsEvent = () => {
               <div className="flex gap-2 text-[10px] align-middle ">
                 <p>June 8, 2015</p>
                 <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-200">Laboratory</a></p>
+                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
                 {/* <GoDotFill className="text-center" /> */}
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-300">Warm and humid, a sticky day</a></h1>
-              <p className="text-[11px] font-light">
+              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Warm and humid, a sticky day</a></h1>
+              <p className="text-[11px] font-medium">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>
@@ -69,11 +69,11 @@ const NewsEvent = () => {
               <div className="flex gap-2 text-[10px] align-middle ">
                 <p>June 8, 2015</p>
                 <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-200">Laboratory</a></p>
+                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
                 {/* <GoDotFill className="text-center" /> */}
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-300">Round and round like a carousel</a></h1>
-              <p className="text-[11px] font-light text-black">
+              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Round and round like a carousel</a></h1>
+              <p className="text-[11px] font-medium">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>
@@ -90,11 +90,11 @@ const NewsEvent = () => {
               <div className="flex gap-2 text-[10px] align-middle ">
                 <p>June 8, 2015</p>
                 <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-200">Laboratory</a></p>
+                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
                 {/* <GoDotFill className="text-center" /> */}
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-300">Standard digital news</a></h1>
-              <p className="text-[11px] font-light">
+              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Standard digital news</a></h1>
+              <p className="text-[11px] font-medium">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>
@@ -158,9 +158,9 @@ const NewsEvent = () => {
           <p className="text-[11px] py-2">Interactively coordinate proactive e-commerce via process-centric “outside the box“ thinking.</p>
 
           <div className="flex gap-2 py-2">
-            <FaFacebookF className="text-white hover:text-blue-500 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
-            <FaTwitter className="text-white hover:text-blue-500 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
-            <FaLinkedinIn className="text-white hover:text-blue-500 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
+            <FaFacebookF className="text-white hover:text-blue-600 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
+            <FaTwitter className="text-white hover:text-blue-600 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
+            <FaLinkedinIn className="text-white hover:text-blue-600 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
           </div>
 
         </div>

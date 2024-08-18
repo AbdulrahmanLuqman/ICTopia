@@ -4,11 +4,11 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     backgroundImage: {
-      news: 'url(./public/images/news.jpg)',
-      event1: 'url(./public/images/event1.jpg)',
-      event2: 'url(./public/images/event2.jpg)',
-      event3: 'url(./public/images/event3.jpg)',
-      map: 'url(./public/images/map.jpg)',
+      news: 'url(./images/news.jpg)',
+      event1: 'url(./images/event1.jpg)',
+      event2: 'url(./images/event2.jpg)',
+      event3: 'url(./images/event3.jpg)',
+      map: 'url(./images/map.jpg)',
     },
     extend: {},
   },
