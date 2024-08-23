@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlaneUp, faLaptop, faFireFlameSimple, faSuitcase, faAtom, faTruckPickup} from '@fortawesome/free-solid-svg-icons';
 const ServicesSection = () => {
   return (
-    <div className='h-screen bg-service-img bg-cover bg-center bg-blue-600 p-12'>
+    <div className='bg-service-img bg-cover bg-center bg-blue-600 sm:p-12 p-4 sm:text-left text-center'>
         <div>
-            <p>OUR SERVICES</p>
-            <h1>Industries Served</h1>
-            <div className='bg-cyan-500 h-1 w-32'></div>
+            <p className='sm:text-5xl mb-5'>OUR SERVICES</p>
+            <h1 className='sm:text-3xl'>Industries Served</h1>
+            <div className='bg-cyan-500 h-1 lg:w-56 md:w-[27%] mt-3'></div>
         </div>
 
-      <div className='grid grid-cols-4 gap-8 mt-12'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 mt-12'>
         <Service servdesc={"Automotive components and assemblies are subject to performance evaluations according to industry standards"} servname={"Aerospace"} Icon={<FontAwesomeIcon icon={faPlaneUp} />} />
 
         <Service servdesc={"The materials selection process and safety protocols rank aerospace among the most carefully regulated in industry today."} servname={"Automotive"} Icon={<FontAwesomeIcon icon={faTruckPickup} />} />
