@@ -6,6 +6,7 @@ import NewsEvent from "../components/LandingPageComponents/NewsEvent"
 const LandingPage = () => {
   return (
     <main>
+      {/* <HeroSection /> */}
         <HeroSection />
         <ServicesSection />
         <ManagementSection />
