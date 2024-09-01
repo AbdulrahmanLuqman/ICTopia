@@ -2,7 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'service-img': "url('/src/service-bg.svg')"
+      }
+    },
   },
   plugins: [require('daisyui')],
   daisyui: {
