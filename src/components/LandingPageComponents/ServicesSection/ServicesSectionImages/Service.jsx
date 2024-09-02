@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlaneUp } from '@fortawesome/free-solid-svg-icons';
 
-const Service = ({Icon:icon, servname, servdesc}) => {
+const Service = ({Icon:icon, servname, servdesc, durationTime }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
 
@@ -27,7 +27,8 @@ const Service = ({Icon:icon, servname, servdesc}) => {
   }, []);
 
   return (
-    <div ref={elementRef} className={`text-white transform transition-transform duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} `}>
+    <div ref={elementRef} className={`text-white transform transition-all duration-${durationTime}ms 
+    ${isVisible ? `translate-x-0 opacity-100` : `translate-x-full opacity-0`} `}>
         <p className='text-5xl hover:text-black w-fit sm:mx-0 mx-auto'>{icon}</p>
         <h2 className='mt-5'>{servname}</h2>
         <p className='mt-4'>{servdesc}.</p>
@@ -35,4 +36,4 @@ const Service = ({Icon:icon, servname, servdesc}) => {
   )
 }
 
-export default Service
+export default Service;
