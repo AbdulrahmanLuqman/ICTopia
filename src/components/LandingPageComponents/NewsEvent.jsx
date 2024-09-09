@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedinIn, FaPhoneAlt, FaTwitter } from "react-icons/fa
 import { LiaLinkSolid } from "react-icons/lia";
 import { IoMdMail } from "react-icons/io";
 import { MdOutlineLocationOn } from "react-icons/md";
-import location from "../../../public/images/location.png"
+import location from "../../../public/location.png"
 
 // import { GoDotFill } from "react-icons/go"
 
