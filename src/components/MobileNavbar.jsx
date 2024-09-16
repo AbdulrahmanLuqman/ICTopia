@@ -15,7 +15,7 @@ const MobileNavbar = ({showNav, setShowNav}) => {
 
 
   return (
-    <nav className={`space-y-6 lg:hidden absolute w-full py-4 px-2 bg-[whitesmoke] overflow-y-auto h-[88%] transition-all duration-700  ${showNav ? "left-0" : "left-[-2000px]"}`}>
+    <nav className={`z-50 space-y-6 lg:hidden absolute w-full py-4 px-2 bg-[whitesmoke] overflow-y-auto h-[88%] transition-all duration-700  ${showNav ? "left-0" : "left-[-2000px]"}`}>
       <div className="flex flex-col items-center gap-4">
         <div className="flex ">
           <a href=""><RiTwitterXFill className="text-[navy] text-xl"/></a>
