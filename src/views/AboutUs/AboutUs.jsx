@@ -1,4 +1,4 @@
-import Header from "../components/AboutUsComponents/Header"
+import Header from "../../components/AboutUsComponents/Header"
 
 const AboutUs = () => {
   return (

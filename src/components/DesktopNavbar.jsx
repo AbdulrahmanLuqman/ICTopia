@@ -11,28 +11,58 @@ import PhLinkedinLogo from "./Icons/PhLinkedinLogo"
 
 const Navbar = () => {
   const location = useLocation()
+  // const aboutUsNavs = ["Overview", "History"]
+  const aboutUsNavs = [
+    {
+      linkTo: "/about-us/overview",
+      name: "Overview"
+    },
+    {
+      linkTo: "/about-us/history",
+      name: "History"
+    },
+    {
+      linkTo: "/about-us/clients-and-testimonials",
+      name: "Clients & Testimonials"
+    },
+    {
+      linkTo: "/about-us/personal-biography",
+      name: "Personal biography"
+    },
+    {
+      linkTo: "/about-us/team-members",
+      name: "Team Members"
+    },
+    {
+      linkTo: "/about-us/location",
+      name: "Location"
+    },
+    {
+      linkTo: "/about-us/contact",
+      name: "Contact"
+    },
+    {
+      linkTo: "/about-us/construction",
+      name: "Construction"
+    }
+  ]
   return (
-    <nav className="lg:bg-[#0106a0] lg:w-full lg:px-20 lg:flex lg:justify-between hidden md:px-6 px-4">
+    <nav className={`lg:bg-[#0106a0] lg:w-full lg:px-20 lg:flex lg:justify-between hidden md:px-6 px-4 ${window.scrollY >= 120 ? "sticky" : ""}`}>
       <ul className="flex gap-8">
         <li className={`px-3 pb-3 mt-4 ${location.pathname === "/" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/">Home</Link></li>
         <li className={`nav px-3 pb-3 mt-4 relative ${location.pathname === "/about-us" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}>
           <Link to="/about-us">About Us</Link>
 
-          <div className="subnav absolute hidden">
-            <Link to="" className="p-[10px] border-b">Overview</Link>
-            <Link to="" className="p-[10px] border-b">History</Link>
-            <Link to="" className="p-[10px] border-b">Clients & Testimonials</Link>
-            <Link to="" className="p-[10px] border-b">Personal biography</Link>
-            <Link to="" className="p-[10px] border-b">Team Members</Link>
-            <Link to="" className="p-[10px] border-b">Location</Link>
-            <Link to="" className="p-[10px] border-b">Contact</Link>
-            <Link to="" className="p-[10px] border-b">Under Construction</Link>
+          <div className="subnav absolute hidden z-50">
+            {aboutUsNavs.map((aboutUsNav) => 
+            <Link to={aboutUsNav.linkTo} key={Math.random()} className="p-[10px] border-b">{aboutUsNav.name}</Link>
+            )}
           </div>
         </li>
         <li className={`nav px-3 pb-3 mt-4 relative ${location.pathname === "/services" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}>
           <Link to="/services">Services</Link>
 
-          <div className="subnav absolute hidden">
+          <div className="subnav absolute hidden z-50">
             <Link to="" className="p-[10px] border-b">Overview</Link>
             <Link to="" className="p-[10px] border-b">Single Service</Link>
             <Link to="" className="p-[10px] border-b">Price Packages</Link>

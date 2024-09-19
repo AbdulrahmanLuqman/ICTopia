@@ -1,6 +1,6 @@
 import HeroSection from "../components/LandingPageComponents/HeroSection"
+import ManagementSection from "../components/LandingPageComponents/ManagementSection"
 import ServicesSection from "../components/LandingPageComponents/ServicesSection/ServicesSection"
-import ManagementSection from "../components/LandingPageComponents/management"
 import NewsEvent from "../components/LandingPageComponents/NewsEvent"
 
 const LandingPage = () => {
