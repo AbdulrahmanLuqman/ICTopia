@@ -1,4 +1,5 @@
 import HistoryHeader from "../../components/AboutUsComponents/HistoryHeader"
+import HistoryThirdSection from "../../components/AboutUsComponents/HistoryThirdSection"
 import MilestoneAndDates from "../../components/AboutUsComponents/MilestoneAndDates"
 
 const History = () => {
@@ -6,6 +7,7 @@ const History = () => {
     <div>
       <HistoryHeader />
       <MilestoneAndDates />
+      <HistoryThirdSection />
     </div>
   )
 }
