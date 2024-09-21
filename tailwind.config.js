@@ -6,11 +6,11 @@ export default {
     extend: {
     backgroundImage: {
       'service-img': "url('/src/service-bg.svg')",
-      news: 'url(./images/news.jpg)',
-      event1: 'url(./images/event1.jpg)',
-      event2: 'url(./images/event2.jpg)',
-      event3: 'url(./images/event3.jpg)',
-      map: 'url(./images/map.jpg)',
+      news: 'url(/images/news.jpg)',
+      event1: 'url(/images/event1.jpg)',
+      event2: 'url(/images/event2.jpg)',
+      event3: 'url(/images/event3.jpg)',
+      map: 'url(/images/map.jpg)',
     },
   },
   plugins: [require('daisyui')],

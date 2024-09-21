@@ -36,7 +36,7 @@ const MobileNavbar = ({showNav, setShowNav}) => {
           </div>
 
           <div className={`${!showSubAbout ? "hidden" : "flex flex-col gap-2 items-center"}`}>
-            <Link to="" className="text-[12px]">Overview</Link>
+            <Link to="/about-us/overview" className="text-[12px]">Overview</Link>
             <Link to="" className="text-[12px]">History</Link>
             <Link to="" className="text-[12px]">Clients & Testimonials</Link>
             <Link to="" className="text-[12px]">Personal biography</Link>
