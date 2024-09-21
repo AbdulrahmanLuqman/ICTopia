@@ -5,12 +5,12 @@ import train from "/images/inner_history_3.jpg"
 const HistoryThirdSection = () => {
     return (
         <section className="flex flex-col md:flex-row md:px-24 sm:px-12 p-4 py-12 gap-5">
-            <header>
-                <h1 className="md:text-5xl font-bold">1924</h1>
+            <header className="md:text-sm">
+                <h1 className="md:text-5xl text-3xl font-bold mb-3">1924</h1>
 
                 <p>VISION TO PLAN</p>
 
-                <h2>Iterative approaches</h2>
+                <h2 className="font-bold text-lg">Iterative approaches</h2>
 
                 <p>Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
             </header>
