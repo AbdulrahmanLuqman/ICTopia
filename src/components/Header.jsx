@@ -12,7 +12,7 @@ import MaterialSymbolsLightCloseRounded from "./Icons/MaterialSymbolsLightCloseR
 const Header = () => {
     const [showNav, setShowNav] = useState(false)
   return (
-    <header>
+    <header className="lg:static sticky top-0 z-50">
         <div className="w-full bg-[whitesmoke] lg:py-0 py-4 lg:px-20 md:px-6 px-4 flex items-center lg:justify-between">
             
             <div onClick={()=> setShowNav(!showNav)} className="lg:hidden">
