@@ -4,7 +4,7 @@ import train from "/images/inner_history_3.jpg"
 
 const HistoryThirdSection = () => {
     return (
-        <section className="flex flex-col md:flex-row md:px-24 sm:px-12 p-4 py-12 gap-5">
+        <section className="flex flex-col md:flex-row md:px-24 sm:px-12 p-4 py-12 md:gap-5 gap-3">
             <header className="md:text-sm">
                 <h1 className="md:text-5xl text-3xl font-bold mb-3">1924</h1>
 
@@ -25,8 +25,8 @@ const HistoryThirdSection = () => {
                 <p>Proactively fabricate one-to-one materials via effective e-business. Completely synergize scalable e-commerce rather than high standards in e-services. Assertively iterate resource maximizing products after leading-edge intellectual capital.</p>
 
                 <div className="flex gap-6 flex-col sm:flex-row">
-                    <img src={bigMachine} alt="display image" className="block w-64 " />
-                    <img src={train} alt="display image" className="block w-64 " />
+                    <img src={bigMachine} alt="display image" className="block sm:w-64 w-full " />
+                    <img src={train} alt="display image" className="block sm:w-64 w-full " />
                 </div>
             </div>
             <hr />
