@@ -78,7 +78,7 @@ const PersonalBio = () => {
         </div>
       </section>
 
-      <section className='px-8 md:px-32'>
+      <section className='px-8 md:px-36'>
         <h1 className='text-2xl font-medium py-1'>Publications</h1>
         <div className="w-20 bg-blue-400 h-[2px] rounded-lg my-2"></div>
 
