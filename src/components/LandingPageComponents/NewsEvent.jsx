@@ -70,7 +70,6 @@ const NewsEvent = () => {
                 <p>June 8, 2015</p>
                 <p> / </p>
                 <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
-                {/* <GoDotFill className="text-center" /> */}
               </div>
               <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Round and round like a carousel</a></h1>
               <p className="text-[11px] font-medium">
@@ -104,7 +103,7 @@ const NewsEvent = () => {
         </section>
       </section>
 
-      <section className="grid  lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-20 lg:px-48 py-28  text-white">
+      <section className="grid lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-20 lg:px-48 py-28  text-white">
         <div className="col-span-1">
           <h1 className="text-[10px] py-1">NEW YORK</h1>
           <h1 className="text-xl font-bold">Headquarters</h1>
