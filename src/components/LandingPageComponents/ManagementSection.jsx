@@ -39,7 +39,7 @@ const Management = () => {
                     <p className="w-[100px] h-[4px] bg-[#54c4cf] mb-[1rem]"></p>
                     <p className="lg:w-[65%] w-full md:text-[18px] text-[15px] leading-[30px]">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
                 </div>
-                <div className="pt-[2rem] w-full grid lg:grid-rows-1 lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-x-[3rem] gap-y-[2rem] items-center lg:mt-[6rem] md:mt-[3rem]">
+                <div className="pt-[2rem] w-full grid lg:grid-rows-1 lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-x-[2rem] gap-y-[2rem] items-center lg:mt-[6rem] md:mt-[3rem]">
                     <div className="w-[100%] h-[70vh] flex flex-col">
                         <div className="w-[100%] h-[65%] relative cursor-pointer">
                             <div className="absolute w-full h-full z-20  transitionallm duration-300 easineout opacity-0 hover:opacity-100">
