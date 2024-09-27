@@ -1,8 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+    backgroundImage: {
+      'service-img': "url('/src/service-bg.svg')",
+      news: 'url(/images/news.jpg)',
+      event1: 'url(/images/event1.jpg)',
+      event2: 'url(/images/event2.jpg)',
+      event3: 'url(/images/event3.jpg)',
+      map: 'url(/images/map.jpg)',
+      bgBio: 'url(/images/bg-bio.jpg)',
+    },
   },
   plugins: [require('daisyui')],
   daisyui: {
@@ -15,4 +25,5 @@ export default {
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ':root', // The element that receives theme color CSS variables
   },
-};
+  }
+}

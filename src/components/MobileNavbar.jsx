@@ -15,7 +15,7 @@ const MobileNavbar = ({showNav, setShowNav}) => {
 
 
   return (
-    <nav className={`space-y-6 lg:hidden absolute w-full py-4 px-2 bg-[whitesmoke] overflow-y-auto h-[88%] transition-all duration-700  ${showNav ? "left-0" : "left-[-2000px]"}`}>
+    <nav className={`z-50 space-y-6 lg:hidden fixed top-[94px] w-full py-4 px-2 bg-[whitesmoke] overflow-y-auto h-[88%] transition-all duration-700  ${showNav ? "left-0" : "left-[-2000px]"}`}>
       <div className="flex flex-col items-center gap-4">
         <div className="flex ">
           <a href=""><RiTwitterXFill className="text-[navy] text-xl"/></a>
@@ -36,7 +36,7 @@ const MobileNavbar = ({showNav, setShowNav}) => {
           </div>
 
           <div className={`${!showSubAbout ? "hidden" : "flex flex-col gap-2 items-center"}`}>
-            <Link to="" className="text-[12px]">Overview</Link>
+            <Link to="/about-us/overview" className="text-[12px]">Overview</Link>
             <Link to="" className="text-[12px]">History</Link>
             <Link to="" className="text-[12px]">Clients & Testimonials</Link>
             <Link to="" className="text-[12px]">Personal biography</Link>
