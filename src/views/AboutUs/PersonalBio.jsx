@@ -1,9 +1,9 @@
-import biography from '/biography.jpg'
+import biography from '/images/biography.jpg'
 import { IoMdMail } from "react-icons/io";
-import bio1 from '/bio1.jpg'
-import bio2 from '/bio2.jpg'
-import bio3 from '/bio3.jpg'
-import bio4 from '/bio4.jpg'
+import bio1 from '/images/bio1.jpg'
+import bio2 from '/images/bio2.jpg'
+import bio3 from '/images/bio3.jpg'
+import bio4 from '/images/bio4.jpg'
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import BioPublication from '../../components/AboutUsComponents/BioPublication';
 
