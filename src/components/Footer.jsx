@@ -7,7 +7,7 @@ import location from "/images/location.png"
 const Footer = () => {
   return (
     <div>
-      <section className="grid lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-20 lg:px-48 py-28  text-white">
+      <section className="grid lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-20 lg:px-48 py-14  text-white">
         <div className="col-span-1">
           <h1 className="text-[10px] py-1">NEW YORK</h1>
           <h1 className="text-xl font-bold">Headquarters</h1>
