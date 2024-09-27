@@ -1,8 +1,11 @@
+import OverviewSection from "../../components/AboutUsComponents/OverviewComponents/OverviewSection";
+
 
 const Overview = () => {
   return (
-    <div>Overview</div>
-  )
-}
-
-export default Overview
+    <div>
+      <OverviewSection/>
+    </div>
+  );
+};
+export default Overview;
