@@ -1,4 +1,3 @@
-import HistoryContactSection from "../../components/AboutUsComponents/HistoryContactSection"
 import HistoryFourthSection from "../../components/AboutUsComponents/HistoryFourthSection"
 import HistoryHeader from "../../components/AboutUsComponents/HistoryHeader"
 import HistoryThirdSection from "../../components/AboutUsComponents/HistoryThirdSection"
@@ -11,7 +10,6 @@ const History = () => {
       <MilestoneAndDates />
       <HistoryThirdSection />
       <HistoryFourthSection />
-      <HistoryContactSection />
     </div>
   )
 }
