@@ -1,9 +1,10 @@
+import Overview from "./Overview"
 
 
 const AboutUs = () => {
   return (
     <main>
-      <Header />
+      <Overview />
     </main>
   )
 }
