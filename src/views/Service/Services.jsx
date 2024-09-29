@@ -1,10 +1,10 @@
-import Header from "../components/ServicesComponents/Header"
+import Overview from "./Overview"
 
 
 const Services = () => {
   return (
     <main>
-        <Header />
+        <Overview />
     </main>
   )
 }

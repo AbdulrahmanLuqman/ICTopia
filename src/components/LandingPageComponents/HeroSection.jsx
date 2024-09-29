@@ -7,19 +7,19 @@ const HeroSection = () => {
   const slides = [
     {
       id: 1,
-      image: "public/images/sec-students.jpg",
+      image: "/images/sec-students.jpg",
       heading: "Slide One",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
     },
     {
       id: 2,
-      image: "public/images/programing.jpg",
+      image: "/images/programing.jpg",
       heading: "Slide Two",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
     },
     {
       id: 3,
-      image: "public/images/code.jpg",
+      image: "/images/code.jpg",
       heading: "Slide Three",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
