@@ -8,7 +8,7 @@ import ClientsAndTestimonials from "./views/AboutUs/ClientsAndTestimonials"
 import PersonalBio from "./views/AboutUs/PersonalBio"
 import TeamMembers from "./views/AboutUs/TeamMembers"
 
-import Services from "./views/Services"
+import Services from "./views/Service/Services"
 import Projects from "./views/Projects"
 import Blog from "./views/Blog"
 import Header from "./components/Header"
@@ -34,6 +34,7 @@ const App = () => {
         <Route path="/about-us/team-members" element={<TeamMembers/>} />
         
         <Route path="/services" element={<Services/>} />
+        <Route path="/services/faq" element={<Services/>} />
 
         <Route path="/projects" element={<Projects/>} />
         <Route path="/blogs" element={<Blog/>} />

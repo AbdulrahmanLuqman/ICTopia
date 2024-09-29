@@ -63,12 +63,8 @@ const Navbar = () => {
           <Link to="/services">Services</Link>
 
           <div className="subnav absolute hidden z-50">
-            <Link to="" className="p-[10px] border-b">Overview</Link>
-            <Link to="" className="p-[10px] border-b">Single Service</Link>
-            <Link to="" className="p-[10px] border-b">Price Packages</Link>
-            <Link to="" className="p-[10px] border-b">Our Expertise</Link>
-            <Link to="" className="p-[10px] border-b">Cost Calculator</Link>
-            <Link to="" className="p-[10px] border-b">FAQ</Link>
+            <Link to="/services" className="p-[10px] border-b">Overview</Link>
+            <Link to="/services/faqs" className="p-[10px] border-b">FAQ</Link>
           </div>
         </li>
         <li className={`px-3 pb-3 mt-4 ${location.pathname === "/projects" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/projects">Projects</Link></li>
