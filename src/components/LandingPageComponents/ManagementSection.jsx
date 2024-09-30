@@ -74,7 +74,7 @@ const Management = () => {
                         </div>
                         <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                             <div className="flex flex-col">
-                                <h3 className="text-[18px] font-[500]">Mr. Abdulazeez A`&apos;`Ganiyu</h3>
+                                <h3 className="text-[18px] font-[500]">Mr. Abdulazeez A&apos;Ganiyu</h3>
                                 <p>Senior Web Developer</p>
                             </div>
                             <div className="flex items-center gap-[10px]">
@@ -114,7 +114,7 @@ const Management = () => {
                         </div>
                         <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                             <div className="flex flex-col">
-                                <h3 className="text-[18px] font-[500]">Mr. Luqman A`&apos;`Rahman</h3>
+                                <h3 className="text-[18px] font-[500]">Mr. Luqman A&apos;Rahman</h3>
                                 <p>Senior Web developer</p>
                             </div>
                             <div className="flex items-center gap-[10px]">
