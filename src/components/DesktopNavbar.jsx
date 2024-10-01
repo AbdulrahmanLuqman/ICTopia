@@ -40,10 +40,6 @@ const Navbar = () => {
     {
       linkTo: "/about-us/contact",
       name: "Contact"
-    },
-    {
-      linkTo: "/about-us/construction",
-      name: "Construction"
     }
   ]
   return (
