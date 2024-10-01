@@ -13,6 +13,7 @@ import Projects from "./views/Projects"
 import Blog from "./views/Blog"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Faq from "./views/Service"
 
 // #0106a0 dark blue
 // #54c4cf green
@@ -34,7 +35,7 @@ const App = () => {
         <Route path="/about-us/team-members" element={<TeamMembers/>} />
         
         <Route path="/services" element={<Services/>} />
-        <Route path="/services/faq" element={<Services/>} />
+        <Route path="/services/faqs" element={<Faq/> } />
 
         <Route path="/projects" element={<Projects/>} />
         <Route path="/blogs" element={<Blog/>} />
