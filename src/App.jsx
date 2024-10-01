@@ -13,7 +13,7 @@ import Projects from "./views/Projects"
 import Blog from "./views/Blog"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import Faq from "./views/Service"
+import Faq from "./views/Service/Faq"
 
 // #0106a0 dark blue
 // #54c4cf green
