@@ -4,14 +4,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "service-img": "url('/src/service-bg.svg')",
-        news: "url(/images/news.jpg)",
-        event1: "url(/images/event1.jpg)",
-        event2: "url(/images/event2.jpg)",
-        event3: "url(/images/event3.jpg)",
-        map: "url(/images/map.jpg)",
-        bgBio: "url(/images/bg-bio.jpg)",
+    backgroundImage: {
+      'service-img': "url('/src/service-bg.svg')",
+      news: 'url(/images/news.jpg)',
+      event1: 'url(/images/event1.jpg)',
+      event2: 'url(/images/event2.jpg)',
+      event3: 'url(/images/event3.jpg)',
+      map: 'url(/images/map.jpg)',
+      bgBio: 'url(/images/bg-bio.jpg)',
+      serviceBg: 'url(/images/serviceBg.jpg)',
+
       },
     },
     plugins: [require("daisyui")],
@@ -24,6 +26,7 @@ export default {
       prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
       logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
       themeRoot: ":root", // The element that receives theme color CSS variables
+
     },
   },
 };
