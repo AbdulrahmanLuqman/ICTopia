@@ -12,6 +12,7 @@ export default {
       event3: 'url(/images/event3.jpg)',
       map: 'url(/images/map.jpg)',
       bgBio: 'url(/images/bg-bio.jpg)',
+      serviceBg: 'url(/images/serviceBg.jpg)',
     },
   },
   plugins: [require('daisyui')],
