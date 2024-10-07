@@ -64,10 +64,70 @@ const Footer = () => {
             <FaFacebookF className="text-white hover:text-blue-600 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
             <FaTwitter className="text-white hover:text-blue-600 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
             <FaLinkedinIn className="text-white hover:text-blue-600 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
+          </div>         
+        </div>
+      </section>
+
+      <section className="bg-[#f2f1ed]">
+        <div className="pt-16 pb-2 px-7 md:px-28">
+          <div className="grid md:grid-cols-3 pb-8 gap-20">
+            <div className="">
+              <h1 className="font-bold text-base">About Us</h1>
+              <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
+
+              <div className="grid grid-cols-2">
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">About us</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Services</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Location</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Contact</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Blog</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Shop</li>
+              </div>
+            </div>
+
+            <div className="">
+              <h1 className="font-bold text-base">Popular Category</h1>
+              <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
+
+              <div className="grid grid-cols-2">
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Laboratory</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Industy</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Materials</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Audio</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Metallurgy</li>
+                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Video</li>
+              </div>
+            </div>
+            
+            <div className="">
+              <h1 className="font-bold text-base">Our products</h1>
+              <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
+
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">EQUIPMENTS</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">HAND TOOLS</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">HARDWARE</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">POWER TOOLS</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">STORAGE</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">WELDING</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">WORKWARE</button>
+            </div>
           </div>
 
+          <div className="pt-10 text-xs">
+            <div className="bg-black h-2 md:h-[2px] rounded-sm my-2"></div>
+            <nav className="flex flex-col md:flex-row justify-between px-2 gap-y-2 py-3">
+              <h1>Override the digital divide with clickthroughs</h1>
+              
+              <ul className="flex gap-4">
+                <li className="hover:text-blue-400">Home</li>
+                <li className="hover:text-blue-400">About us</li>
+                <li className="hover:text-blue-400">Services</li>
+                <li className="hover:text-blue-400">Project</li>
+              </ul>
+            </nav>
+          </div>
+          
         </div>
-
       </section>
     </div>
   )

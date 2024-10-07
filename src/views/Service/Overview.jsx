@@ -7,7 +7,7 @@ const Overview = () => {
     <div>
       <ServiceSection />
       <OurCompany />
-      <IndustriesServed />
+      <IndustriesServed />      
     </div>
   )
 }
