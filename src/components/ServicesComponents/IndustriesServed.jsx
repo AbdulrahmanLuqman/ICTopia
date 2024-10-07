@@ -14,7 +14,7 @@ const IndustryProps = ({icon, title, text}) => {
   return (
     <div className="">
       <p className="text-white text-6xl py-1">{icon}</p>  
-      <p className="font-bold text-xl py-1">{title}</p>
+      <p className="font-bold text-lg md:text-xl py-1">{title}</p>
       <p className="font-normal text-sm py-2">{text}</p>
     </div>
   )
@@ -24,8 +24,8 @@ const IndustryProps = ({icon, title, text}) => {
 const IndustriesServed = () => {
   return (
     <div className="relative bg-center bg-serviceBg bg-fixed bg-cover  text-white">
-      <div className="bg-black opacity-60 px-24 py-20">
-        <div className="grid grid-cols-2">
+      <div className="bg-black opacity-60 px-6 md:px-14 lg:px-24 py-20">
+        <div className="grid md:grid-cols-2">
           <div>
             <h1 className="text-lg font-light">OUR SERVICES</h1>
             <h1 className="font-extrabold text-4xl py-4 text-white">Industries Served</h1>      
@@ -36,7 +36,7 @@ const IndustriesServed = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-4 gap-x-10 gap-y-8 py-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-10">
           <IndustryProps icon={<PiAirplaneLight />} title={'Aerospace'} text={'Automotive components and assemblies are subject to performance evaluations according to industry standards.'} />
           <IndustryProps icon={<LiaCarSideSolid />} title={'Automotive'} text={'The materials selection process and safety protocols rank aerospace among the most carefully regulated in industry today.'} />
           <IndustryProps icon={<HiCubeTransparent />} title={'Coatings & Plating'} text={'Testing materials with a desired outward appearance and protection from corrosion, heat, abrasion, and chemicals.'} />
