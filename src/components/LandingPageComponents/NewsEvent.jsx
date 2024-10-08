@@ -34,7 +34,7 @@ const NewsEvent = () => {
           </div>
 
           <div className="flex bg-white">
-            <div className="bg-event1 bg-cover w-96 md:h-44">
+            <div className="bg-event1 bg-cover w-96">
               <a href="#"><div className="hover:bg-black opacity-60 h-[100%] w-[100%]">
                 <CiCirclePlus />
               </div></a>
@@ -47,7 +47,7 @@ const NewsEvent = () => {
                 {/* <GoDotFill className="text-center" /> */}
               </div>
               <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Warm and humid, a sticky day</a></h1>
-              <p className="text-xs md:text-base font-normal">
+              <p className="text-xs md:text-base lg:text-xs font-normal">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>
@@ -56,7 +56,7 @@ const NewsEvent = () => {
           </div>
 
           <div className="flex bg-white">
-            <div className="bg-event2 bg-cover w-96 md:h-44">
+            <div className="bg-event2 bg-cover w-96">
               <a href="#"><div className="hover:bg-black opacity-60 h-[100%] w-[100%]">
                 <CiCirclePlus />
               </div></a>
@@ -68,7 +68,7 @@ const NewsEvent = () => {
                 <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
               </div>
               <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Round and round like a carousel</a></h1>
-              <p className="text-xs md:text-base font-normal">
+              <p className="text-xs md:text-base lg:text-xs font-normal">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>
@@ -76,7 +76,7 @@ const NewsEvent = () => {
           </div>
 
           <div className="flex bg-white justify-evenly">
-            <div className="bg-event3 bg-cover w-96 md:h-44">
+            <div className="bg-event3 bg-cover w-96">
               <a href="#"><div className="hover:bg-black hover:duration-150 hover:ease-linear opacity-60 h-[100%] w-[100%]">
                 <CiCirclePlus className="z-10"/>
               </div></a>
@@ -89,7 +89,7 @@ const NewsEvent = () => {
                 {/* <GoDotFill className="text-center" /> */}
               </div>
               <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Standard digital news</a></h1>
-              <p className="text-xs md:text-base font-normal">
+              <p className="text-xs md:text-base lg:text-xs font-normal">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>
