@@ -1,9 +1,10 @@
-import Header from "../../components/AboutUsComponents/Header"
+import Overview from "./Overview"
+
 
 const AboutUs = () => {
   return (
     <main>
-        <Header />
+      <Overview />
     </main>
   )
 }

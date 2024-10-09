@@ -1,4 +1,8 @@
 import {useEffect, useState} from "react";
+import team_01 from '/images/team_01.jpg'
+import team_02 from '/images/team_02.jpg'
+import team_03 from '/images/team_03.jpg'
+import team_04 from '/images/team_04.jpg'
 
 const Management = () => {
     const [direction, setDirection] = useState({ x: 0, y: 0 });
@@ -39,14 +43,14 @@ const Management = () => {
                     <p className="w-[100px] h-[4px] bg-[#54c4cf] mb-[1rem]"></p>
                     <p className="lg:w-[65%] w-full md:text-[18px] text-[15px] leading-[30px]">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
                 </div>
-                <div className="pt-[2rem] w-full grid lg:grid-rows-1 lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-x-[3rem] gap-y-[2rem] items-center lg:mt-[6rem] md:mt-[3rem]">
+                <div className="pt-[2rem] w-full grid lg:grid-rows-1 lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-x-[2rem] gap-y-[2rem] items-center lg:mt-[6rem] md:mt-[3rem]">
                     <div className="w-[100%] h-[70vh] flex flex-col">
                         <div className="w-[100%] h-[65%] relative cursor-pointer">
                             <div className="absolute w-full h-full z-20  transitionallm duration-300 easineout opacity-0 hover:opacity-100">
-                                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-20 w-full"></div>
+                                <div className="absolute top-0 left-0 h-full bg-black opacity-30 z-20 w-full"></div>
                                 <div className="rounded-full flex items-center justify-center w-[2rem] h-[2rem] border-[3px] border-white absolute top-[50%] left-[50%] transfor translate-y-[-50%] translate-x-[-50%]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M11 13H6q-.425 0-.712-.288T5 12t.288-.712T6 11h5V6q0-.425.288-.712T12 5t.713.288T13 6v5h5q.425 0 .713.288T19 12t-.288.713T18 13h-5v5q0 .425-.288.713T12 19t-.712-.288T11 18z"/></svg></div>
                             </div>
-                            <img className="w-full h-full absolute top-0 left-0 z-0" src="../src/image/team_01.jpg" alt="image" />
+                            <img className="w-full h-full absolute top-0 left-0 z-0" src={team_01} alt="image" />
                         </div>
                         <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                            <div className="flex-col flex">
@@ -63,14 +67,14 @@ const Management = () => {
                     <div className="w-[100%] h-[70vh] flex flex-col">
                         <div className="w-[100%] h-[65%] relative cursor-pointer">
                             <div className="absolute w-full h-full z-20  transitionallm duration-300 easineout opacity-0 hover:opacity-100">
-                                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-20 w-full"></div>
+                                <div className="absolute top-0 left-0 h-full bg-black opacity-30 z-20 w-full"></div>
                                 <div className="rounded-full flex items-center justify-center w-[2rem] h-[2rem] border-[3px] border-white absolute top-[50%] left-[50%] transfor translate-y-[-50%] translate-x-[-50%]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M11 13H6q-.425 0-.712-.288T5 12t.288-.712T6 11h5V6q0-.425.288-.712T12 5t.713.288T13 6v5h5q.425 0 .713.288T19 12t-.288.713T18 13h-5v5q0 .425-.288.713T12 19t-.712-.288T11 18z"/></svg></div>
                             </div>
-                            <img className="w-full h-full absolute top-0 left-0 z-0" src="../src/image/team_02.jpg" alt="image" />
+                            <img className="w-full h-full absolute top-0 left-0 z-0" src={team_02} alt="image" />
                         </div>
                         <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                             <div className="flex flex-col">
-                                <h3 className="text-[18px] font-[500]">Mr. Abdulazeez A'Ganiyu</h3>
+                                <h3 className="text-[18px] font-[500]">Mr. Abdulazeez A&apos;Ganiyu</h3>
                                 <p>Senior Web Developer</p>
                             </div>
                             <div className="flex items-center gap-[10px]">
@@ -82,11 +86,11 @@ const Management = () => {
                     </div>
                     <div className="w-[100%] h-[70vh] flex flex-col">
                         <div className="w-[100%] h-[65%] relative cursor-pointer">
-                            <div className="absolute w-full h-full z-20  transition-all duration-300 easeinout  opacity-0 hover:opacity-100">
-                                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-20 w-full"></div>
+                            <div className="absolute w-full h-full z-20  transition-all duration-300 easeinout opacity-0 hover:opacity-100">
+                                <div className="absolute top-0 left-0 h-full bg-black opacity-30 z-20 w-full"></div>
                                 <div className="rounded-full flex items-center justify-center w-[2rem] h-[2rem] border-[3px] border-white absolute top-[50%] left-[50%] transfor translate-y-[-50%] translate-x-[-50%]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M11 13H6q-.425 0-.712-.288T5 12t.288-.712T6 11h5V6q0-.425.288-.712T12 5t.713.288T13 6v5h5q.425 0 .713.288T19 12t-.288.713T18 13h-5v5q0 .425-.288.713T12 19t-.712-.288T11 18z"/></svg></div>
                             </div>
-                            <img className="w-full h-full absolute top-0 left-0 z-0" src="../src/image/team_03.jpg" alt="image" />
+                            <img className="w-full h-full absolute top-0 left-0 z-0" src={team_03} alt="image" />
                         </div>
                         <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                             <div className="flex flex-col">
@@ -103,14 +107,14 @@ const Management = () => {
                     <div className="w-[100%] h-[70vh] flex flex-col">
                         <div className="w-[100%] h-[65%] relative cursor-pointer">
                             <div className="absolute w-full h-full z-20  transition-all duration-300 easeinout  opacity-0 hover:opacity-100">
-                                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-20 w-full"></div>
+                                <div className="absolute top-0 left-0 h-full bg-black opacity-30 z-20 w-full"></div>
                                 <div className="rounded-full flex items-center justify-center w-[2rem] h-[2rem] border-[3px] border-white absolute top-[50%] left-[50%] transfor translate-y-[-50%] translate-x-[-50%]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M11 13H6q-.425 0-.712-.288T5 12t.288-.712T6 11h5V6q0-.425.288-.712T12 5t.713.288T13 6v5h5q.425 0 .713.288T19 12t-.288.713T18 13h-5v5q0 .425-.288.713T12 19t-.712-.288T11 18z"/></svg></div>
                             </div>
-                            <img className="w-full h-full absolute top-0 left-0 z-0" src="../src/image/team_04.jpg" alt="image" />
+                            <img className="w-full h-full absolute top-0 left-0 z-0" src={team_04} alt="image" />
                         </div>
                         <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                             <div className="flex flex-col">
-                                <h3 className="text-[18px] font-[500]">Mr. Luqman A'Rahman</h3>
+                                <h3 className="text-[18px] font-[500]">Mr. Luqman A&apos;Rahman</h3>
                                 <p>Senior Web developer</p>
                             </div>
                             <div className="flex items-center gap-[10px]">

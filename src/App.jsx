@@ -8,11 +8,12 @@ import ClientsAndTestimonials from "./views/AboutUs/ClientsAndTestimonials"
 import PersonalBio from "./views/AboutUs/PersonalBio"
 import TeamMembers from "./views/AboutUs/TeamMembers"
 
-import Services from "./views/Services"
+import Services from "./views/Service/Services"
 import Projects from "./views/Projects"
 import Blog from "./views/Blog"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Faq from "./views/Service/Faq"
 
 // #0106a0 dark blue
 // #54c4cf green
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/about-us/team-members" element={<TeamMembers/>} />
         
         <Route path="/services" element={<Services/>} />
+        <Route path="/services/faqs" element={<Faq/>} />
 
         <Route path="/projects" element={<Projects/>} />
         <Route path="/blogs" element={<Blog/>} />
