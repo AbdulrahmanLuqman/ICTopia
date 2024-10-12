@@ -21,8 +21,8 @@ const NewsEvent = () => {
 
         </div>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-3">
-          <div className="bg-news bg-cover md:row-span-3 px-4 pb-4 pt-px md:pt-[100%] lg:pt-[55%]">
+        <section className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-5 lg:gap-5">
+          <div className="bg-news bg-cover md:row-span-3 px-4 pb-4 pt-px lg:pt-[55%]">
             <div className="bg-white px-4 py-6 ">
               <p className="text-base">Open Doors Days / September 26-28</p>
               <h1 className="text-3xl font-semibold text-black py-2">Get into the Factories</h1>
@@ -46,8 +46,8 @@ const NewsEvent = () => {
                 <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
                 {/* <GoDotFill className="text-center" /> */}
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Warm and humid, a sticky day</a></h1>
-              <p className="text-xs font-normal">
+              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Warm and humid, a sticky day</a></h1>
+              <p className="text-xs md:text-base lg:text-xs font-normal">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>
@@ -67,8 +67,8 @@ const NewsEvent = () => {
                 <p> / </p>
                 <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Round and round like a carousel</a></h1>
-              <p className="text-xs font-normal">
+              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Round and round like a carousel</a></h1>
+              <p className="text-xs md:text-base lg:text-xs font-normal">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>
@@ -88,8 +88,8 @@ const NewsEvent = () => {
                 <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
                 {/* <GoDotFill className="text-center" /> */}
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Standard digital news</a></h1>
-              <p className="text-xs font-normal">
+              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Standard digital news</a></h1>
+              <p className="text-xs md:text-base lg:text-xs font-normal">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
                 laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
               </p>

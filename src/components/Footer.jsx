@@ -8,24 +8,24 @@ import image from "../assets/logo.png"
 
 const Footer = () => {
   return (
-    <div>
-      <section className="grid lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-14 lg:px-24 py-16  text-white">
+    <div className="md:tracking-wider lg:tracking-normal">
+      <section className="grid lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-14 lg:px-24 py-16   text-white">
         <div className="col-span-1">
           <h1 className="text-xs py-1">NEW YORK</h1>
           <h1 className="text-xl font-bold">Headquarters</h1>
           <div className="w-16 bg-blue-400 h-[1px] rounded-lg my-2"></div>
-          <p className="text-xs py-2">Interactively coordinate proactive “outside the box“ thinking.</p>
+          <p className="text-sm lg:text-xs py-3">Interactively coordinate proactive “outside the box“ thinking.</p>
           
 
-          <div className="flex items-center gap-2 hover:text-blue-400 text-xs">
+          <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href="tel:+"><FaPhoneAlt className="" /></a>
             <a href="tel:+2349000000004">+ 234 90 000 000 04</a>            
           </div>
-          <div className="flex items-center gap-2 hover:text-blue-400 text-xs">
+          <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href="#"><LiaLinkSolid /></a>
             <a href="#">www.bold-themes.com</a>            
           </div>
-          <div className="flex items-center gap-2 hover:text-blue-400 text-xs">
+          <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href=""><IoMdMail /></a>
             <a href="mailto:">info@bold-themes.com</a>     
           </div>
@@ -40,15 +40,15 @@ const Footer = () => {
             <img src={location} alt="" className="p-2" />
             <div className="py-2">
               <h1 className="text-xs font-light py-2">OUR NETWORK</h1>
-              <div className="flex items-center gap-2 text-white hover:text-blue-400 text-xs pt-1">
+              <div className="flex items-center gap-2 text-white hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+"><MdOutlineLocationOn /></a>
                 <a href="tel:+">Chicago: + 1 555 4529 148</a>  
               </div>
-              <div className="flex items-center gap-2 hover:text-blue-400 text-xs pt-1">
+              <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+"><MdOutlineLocationOn /></a>
                 <a href="tel:+">Chicago: + 1 555 4529 148</a>  
               </div>
-              <div className="flex items-center gap-2 hover:text-blue-400 text-xs pt-1">
+              <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+"><MdOutlineLocationOn /></a>
                 <a href="tel:+">Chicago: + 1 555 4529 148</a>  
               </div>
@@ -60,7 +60,7 @@ const Footer = () => {
           <h1 className="text-xs py-1">GET IN TOUCH</h1>
           <h1 className="text-xl font-bold">Follow Our Activity</h1>
           <div className="w-16 bg-blue-400 h-[1px] rounded-lg my-2"></div>
-          <p className="text-xs py-2">Interactively coordinate proactive e-commerce via process-centric “outside the box“ thinking.</p>
+          <p className="text-sm lg:text-xs py-2">Interactively coordinate proactive e-commerce via process-centric “outside the box“ thinking.</p>
 
           <div className="flex gap-2 py-2">
             <FaFacebookF className="text-white hover:text-blue-600 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
@@ -71,8 +71,8 @@ const Footer = () => {
       </section>
 
       <section className="bg-[#f2f1ed]">
-        <div className="pt-16 pb-2 px-7 md:px-28">
-          <div className="grid md:grid-cols-3 pb-8 gap-20">
+        <div className="pt-16 pb-2 px-7 md:px-14 lg:px-28">
+          <div className="grid lg:grid-cols-3 pb-8 gap-20">
             <div className="">
               <h1 className="font-bold text-base">Popular Category</h1>
               <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
@@ -117,8 +117,8 @@ const Footer = () => {
             <img src={image} alt="Logo" />
           </div>
 
-          <div className="pt-10 text-xs">
-            <div className="bg-black h-2 md:h-[2px] rounded-sm my-2"></div>
+          <div className="pt-1 lg:pt-10 text-xs">
+            <div className="bg-black h-[2px] rounded-sm"></div>
             <nav className="flex flex-col md:flex-row justify-between px-2 gap-y-2 py-3">
               <h1>Override the digital divide with clickthroughs</h1>
               
