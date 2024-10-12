@@ -7,6 +7,8 @@ import History from "./views/AboutUs/History"
 import ClientsAndTestimonials from "./views/AboutUs/ClientsAndTestimonials"
 import PersonalBio from "./views/AboutUs/PersonalBio"
 import TeamMembers from "./views/AboutUs/TeamMembers"
+import Location from "./views/AboutUs/Location"
+import Contact from "./views/AboutUs/Contact"
 
 import Services from "./views/Service/Services"
 import Projects from "./views/Projects"
@@ -14,6 +16,9 @@ import Blog from "./views/Blog"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Faq from "./views/Service/Faq"
+import ScrollToTop from "./ScrollToTop"
+
+import Industry from "./views/Industry"
 
 // #0106a0 dark blue
 // #54c4cf green
@@ -21,9 +26,11 @@ import Faq from "./views/Service/Faq"
 // #0058ea light blue
 
 const App = () => {
+
   return (
     <>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
 
@@ -33,12 +40,15 @@ const App = () => {
         <Route path="/about-us/clients-and-testimonials" element={<ClientsAndTestimonials/>} />
         <Route path="/about-us/personal-biography" element={<PersonalBio/>} />
         <Route path="/about-us/team-members" element={<TeamMembers/>} />
+        <Route path="/about-us/location" element={<Location/>} />
+        <Route path="/about-us/contact" element={<Contact/>} />
         
         <Route path="/services" element={<Services/>} />
         <Route path="/services/faqs" element={<Faq/>} />
 
         <Route path="/projects" element={<Projects/>} />
         <Route path="/blogs" element={<Blog/>} />
+        <Route path="/industry" element={<Industry/>} />
       </Routes>
       <Footer />
     </>

@@ -3,6 +3,8 @@ import { LiaLinkSolid } from "react-icons/lia";
 import { IoMdMail } from "react-icons/io";
 import { MdOutlineLocationOn } from "react-icons/md";
 import location from "/images/location.png"
+import { Link } from "react-router-dom";
+import image from "../assets/logo.png"
 
 const Footer = () => {
   return (
@@ -72,32 +74,32 @@ const Footer = () => {
         <div className="pt-16 pb-2 px-7 md:px-14 lg:px-28">
           <div className="grid lg:grid-cols-3 pb-8 gap-20">
             <div className="">
-              <h1 className="font-bold text-base">About Us</h1>
-              <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
-
-              <div className="grid grid-cols-2">
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">About us</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Services</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Location</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Contact</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Blog</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Shop</li>
-              </div>
-            </div>
-
-            <div className="">
               <h1 className="font-bold text-base">Popular Category</h1>
               <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
 
               <div className="grid grid-cols-2">
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Laboratory</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Industy</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Materials</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Audio</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Metallurgy</li>
-                <li className="list-none text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Video</li>
+                <Link to="/about-us" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">About us</Link>
+                <Link to="/services" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Services</Link>
+                <Link to="/about-us/location" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Location</Link>
+                <Link to="/contact" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Contact</Link>
+                <Link to="/blogs" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Blog</Link>
+                <Link to="/industry" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Industry</Link>
               </div>
             </div>
+
+            {/* <div className="">
+              <h1 className="font-bold text-base"></h1>
+              <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
+
+              <div className="grid grid-cols-2">
+                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Laboratory</Link>
+                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]"></Link>
+                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Materials</Link>
+                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Audio</Link>
+                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Metallurgy</Link>
+                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Video</Link>
+              </div>
+            </div> */}
             
             <div className="">
               <h1 className="font-bold text-base">Our products</h1>
@@ -111,6 +113,8 @@ const Footer = () => {
               <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">WELDING</button>
               <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">WORKWARE</button>
             </div>
+
+            <img src={image} alt="Logo" />
           </div>
 
           <div className="pt-1 lg:pt-10 text-xs">
