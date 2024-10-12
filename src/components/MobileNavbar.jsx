@@ -6,9 +6,10 @@ import PhLinkedinLogo from "./Icons/PhLinkedinLogo"
 import MaterialSymbolsKeyboardArrowDownRounded from "./Icons/MaterialSymbolsKeyboardArrowDownRounded"
 import { useState } from "react"
 import { FaClock, FaPhone} from "react-icons/fa"
+import PropTypes from "prop-types"
 
 
-const MobileNavbar = ({showNav, setShowNav}) => {
+const MobileNavbar = ({showNav}) => {
   const location = useLocation()
   const [showSubAbout, setShowSubAbout] = useState(false)
   const [showSubServices, setShowSubServices] = useState(false)
@@ -81,3 +82,7 @@ const MobileNavbar = ({showNav, setShowNav}) => {
 }
 
 export default MobileNavbar
+
+MobileNavbar.propTypes = {
+  showNav: PropTypes.bool
+}
