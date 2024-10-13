@@ -6,6 +6,10 @@ import powerEnergy from "/images/bio3.jpg";
 import mechanicalEngineering from "/images/bio4.jpg";
 import constructionEngineering from "/images/constrution.jpg";
 import maintenance from "/images/bio2.jpg";
+import projectOne from "/images/project-1.jpg"
+import projectTwo from "/images/project-2.jpg"
+import projectThree from "/images/project-3.jpg"
+import projectFour from "/images/project-4.jpg"
 
 
 const ServiceSection = () => {
@@ -27,6 +31,25 @@ const ServiceSection = () => {
     { id: 5, title: "Construction & Engineering", image: constructionEngineering },
     { id: 6, title: "Maintenance", image: maintenance }
   ];
+
+  const energyPlants = [
+    {
+      id: 1,
+      image: projectOne,
+    },
+    {
+      id: 2,
+      image: projectTwo,
+    },
+    {
+      id: 3,
+      image: projectThree,
+    },
+    {
+      id: 4,
+      image: projectFour,
+    },
+  ]
 
   return (
     <>
@@ -51,7 +74,7 @@ const ServiceSection = () => {
             onMouseLeave={handleMouseLeave}
           >
             <div
-              className={`w-full h-full absolute bg-black opacity-70 transition-all duration-[5000ms] z-50 ${
+              className={`w-full h-full absolute cursor-pointer bg-black opacity-70 transition-all duration-[5000ms] z-40 ${
                 hoveredIndex === index ? "flex" : "hidden"
               } flex-col justify-center gap-2`}
             >
@@ -64,6 +87,38 @@ const ServiceSection = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <hr />
+
+      <div>
+        <div className="flex md:flex-row flex-col justify-between items-center md:px-24 sm:px-12 px-2 py-16">
+          <div className="md:w-[70%] w-full flex flex-col gap-2 py-2">
+            <p>LATEST PROJECT</p>
+            <h1 className="text-4xl font-semibold">Wind Energy Plant</h1>
+            <div className="h-[3px] w-[30%] bg-blue-400"></div>
+          </div>
+
+          <div>
+            <p className="leading-8">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. Capitalise on low hanging fruit to identify a ballpark.</p>
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 md:px-24 sm:px-12 px-2 py-16 lg:gap-8 md:gap-4 sm:gap-3">
+          {
+            energyPlants.map((energy, index) => (
+              <div key={energy.id} onMouseOver={index = energy.id} className="relative">
+                <img className="w-full" src={energy.image} alt="Project" />
+                <div
+                  className={`w-full h-full absolute left-0 top-0 cursor-pointer bg-black opacity-70 transition-all duration-[5000ms] z-40 ${index === energy.id ? "flex" : "hidden"} flex-col justify-center gap-2`}>
+                  <CiCirclePlus className="text-white mx-auto md:text-5xl" />
+                  <p className="text-white font-semibold text-center">View Project</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
       </div>
     </>
   );
