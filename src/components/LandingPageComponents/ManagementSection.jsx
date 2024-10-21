@@ -71,6 +71,7 @@ const Management = () => {
                                 <div className="rounded-full flex items-center justify-center w-[2rem] h-[2rem] border-[3px] border-white absolute top-[50%] left-[50%] transfor translate-y-[-50%] translate-x-[-50%]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M11 13H6q-.425 0-.712-.288T5 12t.288-.712T6 11h5V6q0-.425.288-.712T12 5t.713.288T13 6v5h5q.425 0 .713.288T19 12t-.288.713T18 13h-5v5q0 .425-.288.713T12 19t-.712-.288T11 18z"/></svg></div>
                             </div>
                             <img className="w-full h-full absolute top-0 left-0 z-0" src={team_02} alt="image" />
+                            console.log("🚀 ~ Management ~ absolute:", absolute)
                         </div>
                         <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                             <div className="flex flex-col">

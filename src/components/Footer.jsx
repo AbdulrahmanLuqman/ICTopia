@@ -86,20 +86,6 @@ const Footer = () => {
                 <Link to="/industry" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Industry</Link>
               </div>
             </div>
-
-            {/* <div className="">
-              <h1 className="font-bold text-base"></h1>
-              <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
-
-              <div className="grid grid-cols-2">
-                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Laboratory</Link>
-                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]"></Link>
-                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Materials</Link>
-                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Audio</Link>
-                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Metallurgy</Link>
-                <Link to="" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Video</Link>
-              </div>
-            </div> */}
             
             <div className="">
               <h1 className="font-bold text-base">Our products</h1>
@@ -114,7 +100,9 @@ const Footer = () => {
               <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">WORKWARE</button>
             </div>
 
-            <img src={image} alt="Logo" />
+            <Link to="/">
+              <img src={image} alt="Logo" />  
+            </Link>
           </div>
 
           <div className="pt-1 lg:pt-10 text-xs">
@@ -122,12 +110,12 @@ const Footer = () => {
             <nav className="flex flex-col md:flex-row justify-between px-2 gap-y-2 py-3">
               <h1>Override the digital divide with clickthroughs</h1>
               
-              <ul className="flex gap-4">
-                <li className="hover:text-blue-400">Home</li>
-                <li className="hover:text-blue-400">About us</li>
-                <li className="hover:text-blue-400">Services</li>
-                <li className="hover:text-blue-400">Project</li>
-              </ul>
+              <div className="flex gap-4">
+                <Link to="/" className="hover:text-blue-400">Home</Link >
+                <Link to="/about-us" className="hover:text-blue-400">About us</Link >
+                <Link to="/services" className="hover:text-blue-400">Services</Link >
+                <Link to="/projects" className="hover:text-blue-400">Project</Link >
+              </div>
             </nav>
           </div>
           

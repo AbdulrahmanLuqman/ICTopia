@@ -23,7 +23,7 @@ const IndustryProps = ({icon, title, text}) => {
 
 const IndustriesServed = () => {
   return (
-    <div className="relative bg-center bg-serviceBg bg-fixed bg-cover  text-white">
+    <div className="bg-white text-white">
       <div className="bg-black opacity-60 px-6 md:px-14 lg:px-24 py-20">
         <div className="grid md:grid-cols-2">
           <div>
