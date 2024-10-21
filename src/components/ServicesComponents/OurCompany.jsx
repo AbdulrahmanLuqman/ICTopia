@@ -1,16 +1,12 @@
-const OurCompany = () => {
+const OurCompany = ({Image:icon, title, content}) => {
   return (
-    <div className="w-full grid lg:grid-cols-4  md:grid-cols-2 grid-cols-1 gap-[2rem">
-      {
-        <div className="flex flex-col items-cemter text-center text-white">
-          <div className="text-white hover:text-[#54c4cf]">{company.image}</div>
-          <p className="font-[400] font-[20px]">{company.title}</p>
-          <p className="w-[5rem] h-[3px] bg-[#54c4cf]"></p>
-          <p className="text-[20px]">{company.content}</p>
-        </div>
-      }
-    </div>
+    <div className="flex flex-col items-cemter text-center text-white gap-[1rem]">
+      <div className="text-[#54c4cf] text-5xl hover:text-white transition-all duration-500ms">{icon}</div>
+      <p className="font-[700] text-[20px]">{title}</p>
+      <p className="w-[5rem] h-[3px] bg-[#54c4cf] mx-auto"></p>
+      <p className="text-[15px]">{content}</p>
+    </div> 
   )
 }
 
-export default OurCompany
+export default OurCompany;
