@@ -29,14 +29,12 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   });
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -46,31 +44,11 @@ const HeroSection = () => {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
-  const handleTouchStart = (e) => {
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 50) {
-    nextSlide();
-  }
-    if (touchStart - touchEnd < -50) {
-      prevSlide();
-    }
-  };
-  
-
 
   return (
     <>
       <div className="relative w-full h-[600px] overflow-hidden lg:h-[650px]">
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
+        
         {slides.map((slide, index) => (
           <div
             key={slide.id}
