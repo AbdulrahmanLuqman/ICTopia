@@ -5,7 +5,7 @@ import { faMicrochip } from "@fortawesome/free-solid-svg-icons/faMicrochip";
 const CompanyService = () => {
     return (
         <div>
-            <div className="w-full flex flex-col gap-[3rem] lg:px-[6rem] text-white md:px-[4rem] px-[2rem] py-[3rem] bg-center bg-[url('../public\images/background-factory-verydark.jpg')] bg-no-repeat bg-cover">
+            <div className="w-full flex flex-col gap-[3rem] lg:px-[6rem] text-white md:px-[4rem] px-[2rem] py-[3rem] bg-center bg-[url('../src/images/background-factory-verydark.jpg')] bg-no-repeat bg-cover">
                 <div className="flex w-[50%] items-center mx-auto flex-col gap-[1rem]">
                     <p className="font-[300] text-[20px] leading-[2px]">WHAT WE OFFER</p>
                     <h1 className="text-[44px] font-[500]">Our company services</h1>
