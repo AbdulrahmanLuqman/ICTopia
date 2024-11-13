@@ -1,4 +1,4 @@
-import SubHeader from "../../SubHeader";
+import SubHeader from "../../Subheader";
 import ContactForm from "./ContactForm";
 import Image1 from "/images/chemical-research.jpg";
 import Image2 from "/images/inner_office_1.jpg";
