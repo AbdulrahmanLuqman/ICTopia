@@ -1,6 +1,6 @@
 
 
-const ContactButton = ({ title, type, ...props }) => {
+const ContactButton = ({ type, title, ...props }) => {
   return (
     <div>
       <button type={type} className={props.className}>
