@@ -81,7 +81,7 @@ const Footer = () => {
                 <Link to="/about-us" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">About us</Link>
                 <Link to="/services" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Services</Link>
                 <Link to="/about-us/location" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Location</Link>
-                <Link to="/contact" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Contact</Link>
+                <Link to="/about-us/contact" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Contact</Link>
                 <Link to="/blogs" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Blog</Link>
                 <Link to="/industry" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Industry</Link>
               </div>
