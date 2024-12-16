@@ -2,27 +2,28 @@ import { useState, useEffect } from "react";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 
-
 const HeroSection = () => {
   const slides = [
     {
       id: 1,
       image: "/images/sec-students.jpg",
-      heading: "Slide One",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
+      heading: "Innovate",
+      description:
+        "Innovate, create, and lead in the world of technology. Join ICTOPIA today",
     },
     {
       id: 2,
       image: "/images/programing.jpg",
-      heading: "Slide Two",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
+      heading: "Contest",
+      description:
+        "Compete with the brightest minds to solve real-world ICT challenges globally",
     },
     {
       id: 3,
       image: "/images/code.jpg",
-      heading: "Slide Three",
+      heading: "Collaborate",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
+        "Showcase your skills, gain recognition, and win exciting prizes now",
     },
   ];
 
@@ -42,6 +43,24 @@ const HeroSection = () => {
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 50) {
+      nextSlide();
+    }
+    if (touchStart - touchEnd < -50) {
+      prevSlide();
+    }
   };
 
 
@@ -102,7 +121,6 @@ const HeroSection = () => {
       </div>
     </>
   );
-
 };
 
 export default HeroSection;
