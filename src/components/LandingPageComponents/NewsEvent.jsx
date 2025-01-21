@@ -43,7 +43,7 @@ const NewsEvent = () => {
               <div className="flex gap-2 text-xs align-middle ">
                 <p>June 8, 2015</p>
                 <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
+                <p><a href="#" className="underline-none font-medium hover:text-blue-600">Laboratory</a></p>
                 {/* <GoDotFill className="text-center" /> */}
               </div>
               <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Warm and humid, a sticky day</a></h1>
@@ -65,7 +65,7 @@ const NewsEvent = () => {
               <div className="flex gap-2 text-xs align-middle ">
                 <p>June 8, 2015</p>
                 <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
+                <p><a href="#" className="underline-none font-medium hover:text-blue-600">Laboratory</a></p>
               </div>
               <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Round and round like a carousel</a></h1>
               <p className="text-xs md:text-base lg:text-xs font-normal">
@@ -85,7 +85,7 @@ const NewsEvent = () => {
               <div className="flex gap-2 text-xs align-middle ">
                 <p>June 8, 2015</p>
                 <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
+                <p><a href="#" className="underline-none font-medium hover:text-blue-600">Laboratory</a></p>
                 {/* <GoDotFill className="text-center" /> */}
               </div>
               <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Standard digital news</a></h1>
