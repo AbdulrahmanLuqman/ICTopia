@@ -7,23 +7,23 @@ const HeroSection = () => {
     {
       id: 1,
       image: "/images/sec-students.jpg",
-      heading: "Innovate",
+      heading: "Innovate. Complete. Excel",
       description:
-        "Innovate, create, and lead in the world of technology. Join ICTOPIA today",
+        "Empowering the next generation of ICT leaders and disruptors.",
     },
     {
       id: 2,
       image: "/images/programing.jpg",
-      heading: "Contest",
+      heading: "Shaping the Future of Tech",
       description:
-        "Compete with the brightest minds to solve real-world ICT challenges globally",
+        "A platform for creative minds to redefine digital innovation.",
     },
     {
       id: 3,
       image: "/images/code.jpg",
-      heading: "Collaborate",
+      heading: "Where Innovation Meets Opportunity",
       description:
-        "Showcase your skills, gain recognition, and win exciting prizes now",
+        "Empowering the next generation of ICT leaders and disruptors.",
     },
   ];
 

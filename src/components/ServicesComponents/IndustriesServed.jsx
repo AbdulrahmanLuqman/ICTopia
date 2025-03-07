@@ -27,13 +27,11 @@ const IndustriesServed = () => {
           <div>
             <h1 className="text-lg font-light">What We Offer</h1>
             <h1 className="font-extrabold text-4xl py-4 text-white">
-              Key Initiatives
+            Our Services
             </h1>
             <div className="w-16 bg-blue-800 h-[2px] rounded-lg my-2"></div>
             <h1 className="text-base font-semibold py-1">
-              Override the digital divide with additional clickthroughs from
-              DevOps. Nanotechnology immersion along the information highway
-              will close the loop on focusing solely on the bottom line.
+            At ICTOPIA, we empower individuals and teams through cutting-edge technology competitions, fostering innovation, problem-solving, and real-world applications of ICT skills
             </h1>
           </div>
         </div>
@@ -41,51 +39,51 @@ const IndustriesServed = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-10">
           <IndustryProps
             icon={<PiAirplaneLight />}
-            title={"Annual Summit & Talk Show"}
+            title={"Coding Challenges"}
             text={
-              "A platform to bring together thought leaders, educators, and innovators, fostering engaging discussions and insights on emerging ICT trends."
+              "Engage in high-stakes coding battles where creativity, speed, and technical prowess come together to solve real-world problems."
             }
           />
           <IndustryProps
             icon={<LiaCarSideSolid />}
-            title={"ICT Scholarly Competitions"}
+            title={"Robotics & AI Competitions"}
             text={
-              "Competitions designed to challenge and inspire students to showcase their creativity, problem-solving, and technical skills in ICT fields."
+              "Showcase your skills in artificial intelligence and robotics, building smart systems that push the boundaries of automation and machine learning."
             }
           />
           <IndustryProps
             icon={<HiCubeTransparent />}
-            title={"Artificial Intelligence & Robotics"}
+            title={"Cybersecurity Challenges"}
             text={
-              "Promoting the exploration and development of AI and robotics to drive innovation, learning, and future-ready skillsets for students and educators."
+              "Test your ethical hacking and security expertise in Capture The Flag (CTF) contests, securing networks and defending against cyber threats."
             }
           />
           <IndustryProps
             icon={<BsBicycle />}
-            title={"Computational Thinking"}
+            title={"Game Development & VR/AR Showcases"}
             text={
-              "Equipping learners with the ability to solve complex problems through logical reasoning, breaking them into smaller, manageable parts."
+              "Unleash your imagination by designing immersive video games and interactive experiences using virtual and augmented reality."
             }
           />
           <IndustryProps
             icon={<PiDrop />}
-            title={"Digital Citizenship"}
+            title={"Data Science & Analytics Contests"}
             text={
-              "Teaching individuals to use technology responsibly, ethically, and effectively, while cultivating awareness of online safety and privacy."
+              "Transform raw data into actionable insights through machine learning, predictive modeling, and data visualization challenges"
             }
           />
           <IndustryProps
             icon={<SiMoleculer />}
-            title={"Educational Technology"}
+            title={"UI/UX Design & Product Innovation"}
             text={
-              "Enhancing teaching and learning processes through the integration of modern tools, platforms, and digital resources in classrooms."
+              "Redefine digital experiences with user-centric design challenges that prioritize usability, aesthetics, and accessibility."
             }
           />
           <IndustryProps
             icon={<TfiPackage />}
-            title={"STEAM in Education"}
+            title={"Embedded Systems & IoT Innovation"}
             text={
-              "Focusing on Science, Technology, Engineering, Arts, and Mathematics to provide a holistic, interdisciplinary approach to education."
+              "FCreate smart devices and IoT solutions that bridge the gap between hardware and software for real-world applications."
             }
           />
           <IndustryProps

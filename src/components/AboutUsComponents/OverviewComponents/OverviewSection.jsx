@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SubHeader from "../../Subheader";
+import SubHeader from "/src/components/AboutUsComponents/ContactComponents/SubHeader";
 import Map from "/images/location.png";
 import Project1 from "/images/project-img0.jpg";
 import Project2 from "/images/project-img.jpg";

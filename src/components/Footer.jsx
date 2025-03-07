@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="md:tracking-wider lg:tracking-normal">
       <section className="grid lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-14 lg:px-24 py-16   text-white">
         <div className="col-span-1">
-          <h1 className="text-xs py-1">NEW YORK</h1>
+          <h1 className="text-xs py-1">NIGERIA</h1>
           <h1 className="text-xl font-bold">Headquarters</h1>
           <div className="w-16 bg-blue-400 h-[1px] rounded-lg my-2"></div>
           <p className="text-sm lg:text-xs py-3">Interactively coordinate proactive “outside the box“ thinking.</p>
@@ -19,15 +19,15 @@ const Footer = () => {
 
           <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href="tel:+"><FaPhoneAlt className="" /></a>
-            <a href="tel:+2349000000004">+ 234 90 000 000 04</a>            
+            <a href="tel:+2349000000004">+60147442379</a>            
           </div>
           <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href="#"><LiaLinkSolid /></a>
-            <a href="#">www.bold-themes.com</a>            
+            <a href="#">ictopia.dervac.com</a>            
           </div>
           <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href=""><IoMdMail /></a>
-            <a href="mailto:">info@bold-themes.com</a>     
+            <a href="mailto:">ictopia@dervac.com</a>     
           </div>
 
         </div>
@@ -42,15 +42,11 @@ const Footer = () => {
               <h1 className="text-xs font-light py-2">OUR NETWORK</h1>
               <div className="flex items-center gap-2 text-white hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+"><MdOutlineLocationOn /></a>
-                <a href="tel:+">Chicago: + 1 555 4529 148</a>  
+                <a href="tel:+">Malaysia- +60147442379</a>  
               </div>
               <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+"><MdOutlineLocationOn /></a>
-                <a href="tel:+">Chicago: + 1 555 4529 148</a>  
-              </div>
-              <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs pt-1">
-                <a href="tel:+"><MdOutlineLocationOn /></a>
-                <a href="tel:+">Chicago: + 1 555 4529 148</a>  
+                <a href="tel:+">Nigeria- +2349029285309</a>  
               </div>
             </div>
           </div>
@@ -60,7 +56,7 @@ const Footer = () => {
           <h1 className="text-xs py-1">GET IN TOUCH</h1>
           <h1 className="text-xl font-bold">Follow Our Activity</h1>
           <div className="w-16 bg-blue-400 h-[1px] rounded-lg my-2"></div>
-          <p className="text-sm lg:text-xs py-2">Interactively coordinate proactive e-commerce via process-centric “outside the box“ thinking.</p>
+          <p className="text-sm lg:text-xs py-2">Be part of the innovation! Stay updated with competition highlights, groundbreaking projects, and tech insights <br />Follow us on social media for real-time updates and exclusive content.</p>
 
           <div className="flex gap-2 py-2">
             <FaFacebookF className="text-white hover:text-blue-600 bg-blue-600 hover:border hover:border-blue-500 hover:bg-transparent rounded-full p-3 w-10 h-10"/>
@@ -102,16 +98,16 @@ const Footer = () => {
             </div> */}
             
             <div className="">
-              <h1 className="font-bold text-base">Our products</h1>
+              <h1 className="font-bold text-base">Competition Categories</h1>
               <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
 
-              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">EQUIPMENTS</button>
-              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">HAND TOOLS</button>
-              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">HARDWARE</button>
-              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">POWER TOOLS</button>
-              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">STORAGE</button>
-              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">WELDING</button>
-              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">WORKWARE</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">Software Development</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">Artificial Intelligence</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">Cybersecurity</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">Game Development</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">IoT & Smart Tech</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">Hardware Engineering</button>
+              <button className="text-[10px] text-white bg-blue-500 hover:bg-black rounded-sm px-4 py-[10px] mb-[2px] mr-[2px]">Tech for Good</button>
             </div>
 
             <img src={image} alt="Logo" />
