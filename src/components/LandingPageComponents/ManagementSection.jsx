@@ -1,47 +1,18 @@
-import {useEffect, useState} from "react";
 import team_01 from '/images/team_01.jpg'
 import team_02 from '/images/team_02.jpg'
 import team_03 from '/images/team_03.jpg'
 import team_04 from '/images/team_04.jpg'
 
-const Management = () => {
-    const [direction, setDirection] = useState({ x: 0, y: 0 });
-
-    const  HandleMouseEnter = (e) => {
-        const container = e.currentTarget;
-        const {top, right, bottom, left} = container.getBoundingClientRect();
-        const {clientY, clientX} = e;   
-        const fromLeft = clientX - left;
-        const fromRight = right - clientX;
-        const fromTop = clientY - top;
-        const fromBottom = bottom - clientY;
-        let dir="";
-        if(fromLeft < fromBottom && fromLeft < fromTop && fromLeft < fromBottom) {dir="left";}
-        else if (fromRight < fromLeft && fromRight < fromTop && fromRight < fro) {dir="right";}
-        else if (fromTop< fromBottom && fromTop < fromLeft && fromTop < fromRight) {dir="top";}
-        else {dir="bottom";}
-        
-          setDirection(dir);
-    };
-    const HandleMouseLeave = () => {
-        setDirection("");
-    };
-    useEffect(() => {
-        if (direction) {
-            console.log(`mouse enteredfrom the ${direction}`)
-        }
-    }, [direction]);
-    
-    
+const Management = () => {   
 
     return (
         <div className="w-full h-fit overflow-hidden">
             <div className="w-full bg-[#f2f1ed] lg:p-[6rem] md:px-[3rem] md:py-[4rem] lg:py-[8rem] p-[2rem] text-black">
                 <div className="w-full">
                     <h5>LEARN MORE</h5>
-                    <h1 className="md:text-[40px] text-[30px] font-[700] mb-[16px]">Our Management</h1>
+                    <h1 className="md:text-[40px] text-[30px] font-[700] mb-[16px]">Our Leadership & Vision</h1>
                     <p className="w-[100px] h-[4px] bg-[#54c4cf] mb-[1rem]"></p>
-                    <p className="lg:w-[65%] w-full md:text-[18px] text-[15px] leading-[30px]">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                    <p className="lg:w-[65%] w-full md:text-[18px] text-[15px] leading-[30px]">At ICTOPIA, our management team is dedicated to fostering innovation, collaboration, and excellence in technology competitions. With expertise spanning software development, AI, cybersecurity, and entrepreneurship, we guide participants toward success. Our mission is to bridge the gap between talent and opportunity, empowering the next generation of tech leaders through hands-on challenges and mentorship</p>
                 </div>
                 <div className="pt-[2rem] w-full grid lg:grid-rows-1 lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-x-[2rem] gap-y-[2rem] items-center lg:mt-[6rem] md:mt-[3rem]">
                     <div className="w-[100%] h-[70vh] flex flex-col">
@@ -128,15 +99,19 @@ const Management = () => {
             </div>
             <div className="w-full h-fit lg:px-[6rem] md:px-[3rem] px-[2rem] pb-[2rem] top-0 lg:pt-[8rem] md:pt-[4rem] pt-[2rem] bg-[url('../src/image/background-lab-light.jpg')] bg-center bg-cover z-[20] text-white flex flex-col gap-[1rem]">
                 <div className="rounded-[50%] md:w-[5rem] md:h-[5rem] w-[3rem] h-[3rem] flex items-center justify-center bg-[#54c4cf] opacity-100 hover:bg-nill transition-3000 md:mb-[2rem]-[1rem]"><svg xmlns="http://www.w3.org/2000/svg" className="md:w-[48px] w-[24px] md:h-[48px] h-[24px]" width="48" height="48" viewBox="0 0 24 24"><path fill="#ffffff" d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2"/></svg></div>
-                <h1 className="md:text-[40px] text-[25px] font-[500] w-full lg:w-[60%] mt-[1rem]">Hypotheses like professors, when they are seen not to work any longer in the laboratory, should disappear.</h1>
-                <p className="md:text-[24px] text-[16px]">― Henry Edward Armstrong</p>
+                <h1 className="md:text-[40px] text-[25px] font-[500] w-full lg:w-[60%] mt-[1rem]">"Innovations, like hypotheses, should evolve—or be replaced."</h1>
+                <p className="md:text-[24px] text-[16px]">— Inspired by Henry Edward Armstrong</p>
             </div>
-            <div className="w-full flex items-center bg- justify-between py-[1rem] lg:px-[6rem] md:px-[3rem] px-[1rem] bg-[#0106a0]">
-                <p className="md:text-[20px] text-[10px] font-[500] text-white">Looking for a First-Class Scientific Partner?</p>
-                <div className="flex items-center justify-center bg-[#54c4cf] border-[2px] border-[#54c4cf] md:px-[2rem] md:py-[0.8rem] px-[1rem] py-[0.4rem] rounded-[5px] text-white md:text-xl text-[10px] md:font-[500] hover:bg-[#0106a0]">CONTACT US</div>
+            <div className="w-full flex md:items-end md:flex-row flex-col gap-[1rem] bg- justify-between py-[1rem] lg:px-[6rem] md:px-[3rem] px-[1rem] bg-[#0106a0]">
+                <p className="md:text-[20px] text-[10px] font-[500] text-white md:w-[80%] full"><span className='text-bold md:text-[30px] text-[20px]'>Looking for a First-Class Tech Innovation Partner?</span> <br /><br/>
+Join ICTOPIA, where groundbreaking ideas meet real-world impact. Whether you're a student, developer, or entrepreneur, our competition is the perfect platform to showcase your skills, connect with industry experts, and drive technological advancement.
+<br />
+Get in Touch
+Ready to be part of the future of ICT? Contact us today!?</p>
+                <div className="flex items-center justify-center bg-[#54c4cf] border-[2px] border-[#54c4cf] lg:px-[2rem] lg:py-[0.8rem] px-[1rem] py-[0.4rem] rounded-[5px] text-white lg:text-xl text-[10px] md:font-[500] hover:bg-[#0106a0] w-fit">CONTACT US</div>
             </div>
         </div>
     );
 }
 // #0106a0-blue, #54c4cf-cyan, #2e3192-lighter_blue, #0058ea-royalblue
-export default Management
+export default Management;
