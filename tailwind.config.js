@@ -15,6 +15,19 @@ export default {
         serviceBg: "url(/images/serviceBg.jpg)",
         subHeaderBg: "url(/images/hero_inner_page.jpg)",
       },
+      screens: {
+        xxs: "300px",
+        xs: "480px",
+        xxl: "1500px",
+      },
+      colors: {
+        darkblue: "#0106a0",
+        lightblue: "#0058ea",
+        faintblue: "#2e3192",
+        green: "#54c4cf",
+      },
+      fontFamily: {
+      },
     },
     plugins: [require("daisyui")],
     daisyui: {

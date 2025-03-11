@@ -9,7 +9,6 @@ import PersonalBio from "./views/AboutUs/PersonalBio"
 import TeamMembers from "./views/AboutUs/TeamMembers"
 import Location from "./views/AboutUs/Location"
 import Contact from "./views/AboutUs/Contact"
-
 import Services from "./views/Service/Services"
 import Projects from "./views/Projects"
 import Blog from "./views/Blog"
@@ -17,13 +16,8 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Faq from "./views/Service/Faq"
 import ScrollToTop from "./ScrollToTop"
-
 import Industry from "./views/Industry"
 
-// #0106a0 dark blue
-// #54c4cf green
-// #2e3192 faint blue
-// #0058ea light blue
 
 const App = () => {
 
