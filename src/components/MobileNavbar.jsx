@@ -6,9 +6,10 @@ import PhLinkedinLogo from "./Icons/PhLinkedinLogo"
 import MaterialSymbolsKeyboardArrowDownRounded from "./Icons/MaterialSymbolsKeyboardArrowDownRounded"
 import { useState } from "react"
 import { FaClock, FaPhone} from "react-icons/fa"
+import PropTypes from "prop-types"
 
 
-const MobileNavbar = ({showNav, setShowNav}) => {
+const MobileNavbar = ({showNav}) => {
   const location = useLocation()
   const [showSubAbout, setShowSubAbout] = useState(false)
   const [showSubServices, setShowSubServices] = useState(false)
@@ -37,13 +38,12 @@ const MobileNavbar = ({showNav, setShowNav}) => {
 
           <div className={`${!showSubAbout ? "hidden" : "flex flex-col gap-2 items-center"}`}>
             <Link to="/about-us/overview" className="text-[12px]">Overview</Link>
-            <Link to="" className="text-[12px]">History</Link>
-            <Link to="" className="text-[12px]">Clients & Testimonials</Link>
-            <Link to="" className="text-[12px]">Personal biography</Link>
-            <Link to="" className="text-[12px]">Team Members</Link>
-            <Link to="" className="text-[12px]">Location</Link>
-            <Link to="" className="text-[12px]">Contact</Link>
-            <Link to="" className="text-[12px]">Under Construction</Link>
+            <Link to="/about-us/history" className="text-[12px]">History</Link>
+            <Link to="/about-us/clients-and-testimonials" className="text-[12px]">Clients & Testimonials</Link>
+            <Link to="/about-us/personal-biography" className="text-[12px]">Personal biography</Link>
+            <Link to="/about-us/team-members" className="text-[12px]">Team Members</Link>
+            <Link to="/about-us/location" className="text-[12px]">Location</Link>
+            <Link to="/about-us/contact" className="text-[12px]">Contact</Link>
           </div>
         </li>
         <li>
@@ -53,12 +53,8 @@ const MobileNavbar = ({showNav, setShowNav}) => {
           </div>
 
           <div className={`${!showSubServices ? "hidden" : "flex flex-col gap-2 items-center"}`}>
-            <Link to="" className="text-[12px]">Overview</Link>
-            <Link to="" className="text-[12px]">Single Service</Link>
-            <Link to="" className="text-[12px]">Price Packages</Link>
-            <Link to="" className="text-[12px]">Our Expertise</Link>
-            <Link to="" className="text-[12px]">Cost Calculator</Link>
-            <Link to="" className="text-[12px]">FAQ</Link>
+            <Link to="/services" className="text-[12px]">Overview</Link>
+            <Link to="/services/faqs" className="text-[12px]">FAQ</Link>
           </div>
         </li>
         <li className={`text-sm ${location.pathname === "/projects" ? "text-[navy] font-bold" : "text-gray-700"}`}><Link to="/projects">Projects</Link></li>
@@ -86,3 +82,7 @@ const MobileNavbar = ({showNav, setShowNav}) => {
 }
 
 export default MobileNavbar
+
+MobileNavbar.propTypes = {
+  showNav: PropTypes.bool
+}

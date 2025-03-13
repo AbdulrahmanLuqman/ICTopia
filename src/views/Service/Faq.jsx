@@ -1,12 +1,13 @@
 import Footer from "../../components/Footer"
+import FaqQ from "../../components/ServicesComponents/FaqQ"
 
 
 const Faq = () => {
   return (
     <div>
-      <Footer />
+      <FaqQ/>
     </div>
   )
 }
 
-export default Faq
+export default Faq;

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SubHeader from "/src/components/AboutUsComponents/ContactComponents/SubHeader";
 import Map from "/images/location.png";
 import Project1 from "/images/project-img0.jpg";
 import Project2 from "/images/project-img.jpg";
@@ -51,7 +52,11 @@ const OverviewSection = () => {
 
   return (
     <div>
-
+      <SubHeader
+        title="HOME"
+        head="About Us"
+        content="Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs."
+      />
       <section className="lg:flex lg:items-center lg:justify-between lg:px-14">
         <section className="grid gap-2 px-5 py-12 md:px-8">
           <p className="font-light lg:text-lg">LEARN MORE</p>
@@ -59,7 +64,7 @@ const OverviewSection = () => {
             Our Network
           </p>
           <div className="bg-[#54C4CF] w-20 h-1 mt-2 lg:w-24"></div>
-          <p className="py-4 md:py-6 lg:w-[420px] xl:w-[600px]">
+          <p className="py-4 md:py-6 text-sm md:text-base lg:w-[420px] xl:w-[600px]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
             maiores rem nam architecto aut enim consequatur beatae voluptas,
             rerum earum reprehe Lorem ipsum dolor sit amet consectetur
@@ -103,7 +108,8 @@ const OverviewSection = () => {
           <div className="">
             <p className="text-lg font-semibold">Call center</p>
             <p className="text-sm">
-              Give us a toll free call at <br/> (+1) 800 456324 or (+1) 555 456325
+              Give us a toll free call at <br /> (+1) 800 456324 or (+1) 555
+              456325
             </p>
           </div>
         </div>
@@ -146,13 +152,13 @@ const OverviewSection = () => {
             Our Projects
           </p>
           <div className="bg-[#54C4CF] w-20 h-1 mt-2 lg:w-24"></div>
-          <p className="py-4 md:py-6">
+          <p className="py-4 text-sm md:text-base md:py-6">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
             maiores rem nam architecto aut enim consequatur beatae voluptas,
             rerum earum reprehenderit cupiditate officia iure, odit tempora
             laudantium accusamus a exercitationem!
           </p>
-          <p className="">
+          <p className="text-sm md:text-base">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
             natus inventore in quidem perferendis! Autem asperiores minus ullam
             maiores id beatae voluptas perspiciatis corporis fugit, aut quod ut
@@ -231,13 +237,13 @@ const OverviewSection = () => {
             Show More Skills
           </p>
           <div className="bg-[#54C4CF] w-20 h-1 mt-2 lg:w-24"></div>
-          <p className="py-4 md:py-6">
+          <p className="py-4 text-sm md:text-base md:py-6">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
             maiores rem nam architecto aut enim consequatur beatae voluptas,
             rerum earum reprehenderit cupiditate officia iure, odit tempora
             laudantium accusamus a exercitationem!
           </p>
-          <p className="py-4">
+          <p className="py-4 text-sm md:text-base">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
             maiores rem nam architecto aut enim consequatur beatae voluptas,
             rerum earum reprehenderit cupiditate officia iure, odit tempora
