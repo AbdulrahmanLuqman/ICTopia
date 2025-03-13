@@ -13,6 +13,7 @@ import Projects from "./views/Projects"
 import Blog from "./views/Blog"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import LogInPage from "./views/LogInPage"
 
 // #0106a0 dark blue
 // #54c4cf green
@@ -24,8 +25,8 @@ const App = () => {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-
+        <Route path="/" element={<LogInPage />} />
+        <Route path="/landingPage" element={<LandingPage />} />
         <Route path="/about-us" element={<AboutUs/>} />
         <Route path="/about-us/overview" element={<Overview/>} />
         <Route path="/about-us/history" element={<History/>} />

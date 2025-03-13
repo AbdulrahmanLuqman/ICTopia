@@ -28,7 +28,7 @@ const MobileNavbar = ({showNav, setShowNav}) => {
       </div>
 
       <ul className="flex flex-col items-center gap-4">
-        <li className={`text-sm ${location.pathname === "/" ? "text-[navy] font-semibold" : "text-gray-700"}`}><Link to="/">Home</Link></li>
+        <li className={`text-sm ${location.pathname === "/landingPage" ? "text-[navy] font-semibold" : "text-gray-700"}`}><Link to="/landingPage">Home</Link></li>
         <li>
           <div className="flex items-center justify-center">
             <Link to="/about-us" className={`text-sm ${location.pathname === "/about-us" ? "text-[navy] font-semibold" : "text-gray-700"}`}>About Us</Link>
