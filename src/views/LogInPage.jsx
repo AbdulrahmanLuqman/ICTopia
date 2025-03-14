@@ -80,7 +80,7 @@ const LogInPage = () => {
                     </div>
                 </fieldset>
 
-                <button type="submit" className='block bg-[#0106a0] font-bold rounded-md w-full mt-2 py-2 text-white hover:bg-[#0109e4] hover:text-black cursor-pointer'>SUBMIT</button>
+                <button type="submit" className='block bg-[#0106a0] font-bold rounded-md w-full mt-2 py-2 text-white hover:bg-[#0109e4] hover:text-black cursor-pointer transition-all duration-1000'>SUBMIT</button>
             </form>
         </div>
     </div>

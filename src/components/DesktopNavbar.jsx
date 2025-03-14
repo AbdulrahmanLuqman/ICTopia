@@ -77,7 +77,7 @@ const Navbar = () => {
         <a href=""><HugeiconsFacebook02 className="text-[whitesmoke] text-xl"/></a>
         <a href=""><PhLinkedinLogo className="text-[whitesmoke] text-xl"/></a>
 
-        <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[3px] px-3 text-[whitesmoke] text-sm font-semibold">Get a quote</button>
+        <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[3px] px-3 text-[whitesmoke] text-sm font-semibold"><Link to="/">Get a quote</Link></button>
       </div>
     </nav>
   )
