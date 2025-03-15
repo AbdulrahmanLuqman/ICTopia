@@ -12,7 +12,7 @@ const NewsEvent = () => {
         <div className="grid lg:grid-cols-2">
           <div>
             <h1 className="text-base font-normal">FROM OUR FACTORY</h1>
-            <h1 className="text-4xl font-bold py-3 text-black">Latest news and events</h1>
+            <h1 className="text-4xl font-bold py-3 text-black">Latest News & Events</h1>
             <div className="w-20 bg-blue-400 h-0.5 rounded-lg my-3"></div>
             <p className="text-base mb-14 text-black">
              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
@@ -21,14 +21,14 @@ const NewsEvent = () => {
 
         </div>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-3">
-          <div className="bg-news bg-cover md:row-span-3 px-4 pb-4 pt-px md:pt-[100%] lg:pt-[55%]">
+        <section className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-5 lg:gap-5">
+          <div className="bg-news bg-cover md:row-span-3 px-4 pb-4 pt-px lg:pt-[55%]">
             <div className="bg-white px-4 py-6 ">
-              <p className="text-base">Open Doors Days / September 26-28</p>
-              <h1 className="text-3xl font-semibold text-black py-2">Get into the Factories</h1>
+              <p className="text-base">ICTOPIA Innovation Week – September 26-28  </p>
+              <h1 className="text-3xl font-semibold text-black py-2">Experience the Future of Tech</h1>
               <div className="w-20 bg-blue-400 h-0.5 rounded-lg my-3"></div>
               <p className="text-base">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+              Join us for a three-day immersive event featuring cutting-edge ICT solutions, live demonstrations, and networking with industry leaders.
               </p>
             </div>
           </div>
@@ -41,15 +41,11 @@ const NewsEvent = () => {
             </div>
             <div className="p-4">
               <div className="flex gap-2 text-xs align-middle ">
-                <p>June 8, 2015</p>
-                <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
-                {/* <GoDotFill className="text-center" /> */}
+                <p>June 8, 2025 | Category: Competition Updates</p> 
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Warm and humid, a sticky day</a></h1>
-              <p className="text-xs font-normal">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
+              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Meet the Minds Behind the Innovation  </a></h1>
+              <p className="text-xs md:text-base lg:text-xs font-normal">
+              Get an exclusive look at the groundbreaking projects competing for the top prize. Witness creativity, teamwork, and problem-solving in action.
               </p>
             </div>
 
@@ -63,14 +59,11 @@ const NewsEvent = () => {
             </div>
             <div className="p-4">
               <div className="flex gap-2 text-xs align-middle ">
-                <p>June 8, 2015</p>
-                <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
+                <p>June 8, 2025 | Category: Tech Insights</p>
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Round and round like a carousel</a></h1>
-              <p className="text-xs font-normal">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
+              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Exploring AI & Emerging Technologies</a></h1>
+              <p className="text-xs md:text-base lg:text-xs font-normal">
+              From machine learning breakthroughs to cybersecurity advancements, stay updated with the latest trends shaping the ICT landscape.
               </p>
             </div>
           </div>
@@ -83,15 +76,11 @@ const NewsEvent = () => {
             </div>
             <div className="p-4">
               <div className="flex gap-2 text-xs align-middle ">
-                <p>June 8, 2015</p>
-                <p> / </p>
-                <p><a href="#" className="underline-none hover:text-blue-600">Laboratory</a></p>
-                {/* <GoDotFill className="text-center" /> */}
+                <p>June 8, 2025 | Category: Digital Transformation</p>
               </div>
-              <h1 className="text-lg font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Standard digital news</a></h1>
-              <p className="text-xs font-normal">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                laoreet dolore magna. Ut wisi enim ad minim veniam, quis...
+              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Standard digital news</a></h1>
+              <p className="text-xs md:text-base lg:text-xs font-normal">
+              Join us as we honor the brightest minds in technology. Discover the winning innovations that will redefine the future.
               </p>
             </div>
           </div>
