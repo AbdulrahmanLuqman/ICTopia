@@ -40,12 +40,16 @@ const Navbar = () => {
     {
       linkTo: "/about-us/contact",
       name: "Contact"
+    },
+    {
+      linkTo: "/about-us/construction",
+      name: "Construction"
     }
   ]
   return (
     <nav className={`lg:bg-[#0106a0] lg:w-full lg:px-20 lg:flex lg:justify-between hidden md:px-6 px-4 ${window.scrollY >= 120 ? "sticky" : ""}`}>
       <ul className="flex gap-8">
-        <li className={`px-3 pb-3 mt-4 ${location.pathname === "/" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/">Home</Link></li>
+        <li className={`px-3 pb-3 mt-4 ${location.pathname === "/landingPage" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/landingPage">Home</Link></li>
         <li className={`nav px-3 pb-3 mt-4 relative ${location.pathname === "/about-us" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}>
           <Link to="/about-us">About Us</Link>
 
@@ -73,7 +77,7 @@ const Navbar = () => {
         <a href=""><HugeiconsFacebook02 className="text-[whitesmoke] text-xl"/></a>
         <a href=""><PhLinkedinLogo className="text-[whitesmoke] text-xl"/></a>
 
-        <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[3px] px-3 text-[whitesmoke] text-sm font-semibold">Register Now</button>
+        <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[3px] px-3 text-[whitesmoke] text-sm font-semibold"><Link to="/">Get a quote</Link></button>
       </div>
     </nav>
   )

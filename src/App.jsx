@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom"
 import LandingPage from "./views/LandingPage"
-
 import AboutUs from "./views/AboutUs/AboutUs"
 import Overview from "./views/AboutUs/Overview"
 import History from "./views/AboutUs/History"
@@ -14,6 +13,7 @@ import Projects from "./views/Projects"
 import Blog from "./views/Blog"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import LogInPage from "./views/LogInPage"
 import Faq from "./views/Service/Faq"
 import ScrollToTop from "./ScrollToTop"
 import Industry from "./views/Industry"
@@ -26,8 +26,8 @@ const App = () => {
       <Header />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-
+        <Route path="/" element={<LogInPage />} />
+        <Route path="/landingPage" element={<LandingPage />} />
         <Route path="/about-us" element={<AboutUs/>} />
         <Route path="/about-us/overview" element={<Overview/>} />
         <Route path="/about-us/history" element={<History/>} />

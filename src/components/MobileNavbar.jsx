@@ -25,11 +25,11 @@ const MobileNavbar = ({showNav}) => {
           <a href=""><PhLinkedinLogo className="text-[navy] text-xl"/></a>
           </div>
 
-        <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[2px] px-3 rounded text-[whitesmoke] text-sm font-semibold">Get a quote</button>
+        <button className="bg-[#54c4cf] hover:text-[rgb(0,0,128)] transition-all duration-1000 py-[2px] px-3 rounded text-[whitesmoke] text-sm font-semibold"><Link to="/">Get a quote</Link></button>
       </div>
 
       <ul className="flex flex-col items-center gap-4">
-        <li className={`text-sm ${location.pathname === "/" ? "text-[navy] font-semibold" : "text-gray-700"}`}><Link to="/">Home</Link></li>
+        <li className={`text-sm ${location.pathname === "/landingPage" ? "text-[navy] font-semibold" : "text-gray-700"}`}><Link to="/landingPage">Home</Link></li>
         <li>
           <div className="flex items-center justify-center">
             <Link to="/about-us" className={`text-sm ${location.pathname === "/about-us" ? "text-[navy] font-semibold" : "text-gray-700"}`}>About Us</Link>
