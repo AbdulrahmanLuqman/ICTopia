@@ -13,7 +13,7 @@ import Projects from "./views/Projects"
 import Blog from "./views/Blog"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import LogInPage from "./views/LogInPage"
+import Register from "./views/RegisterPage"
 import Faq from "./views/Service/Faq"
 import ScrollToTop from "./ScrollToTop"
 import Industry from "./views/Industry"
@@ -26,8 +26,7 @@ const App = () => {
       <Header />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<LogInPage />} />
-        <Route path="/landingPage" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/about-us" element={<AboutUs/>} />
         <Route path="/about-us/overview" element={<Overview/>} />
         <Route path="/about-us/history" element={<History/>} />
@@ -43,6 +42,8 @@ const App = () => {
         <Route path="/projects" element={<Projects/>} />
         <Route path="/blogs" element={<Blog/>} />
         <Route path="/industry" element={<Industry/>} />
+
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>
