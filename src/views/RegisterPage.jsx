@@ -10,17 +10,17 @@ const LogInPage = () => {
                     <div>
                         <div className='mt-3'>
                             <label htmlFor="studentName">Student Name</label>
-                            <input type="text" id='studentName' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Your firstname first' />
+                            <input type="text" id='studentName' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Your firstname first' required />
                         </div>
 
                         <div className='mt-3'>
                             <label htmlFor="phoneNumber">Phone number</label>
-                            <input type="text" id='phoneNumber' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Enter your phone number' />
+                            <input type="text" id='phoneNumber' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Enter your phone number' required />
                         </div>
 
                         <div className='mt-3'>
                             <label htmlFor="studentClass">Class</label>
-                            <input type="text" id='studentClass' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Which class are you currently in?' />
+                            <input type="text" id='studentClass' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Which class are you currently in?' required />
                         </div>
 
                         <div className='mt-3'>
@@ -34,7 +34,7 @@ const LogInPage = () => {
 
                         <div className='mt-3'>
                             <label htmlFor="hobbies">Hobbies</label>
-                            <input type="text" id='hobbies' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='What is / are your hobbie(s)' />
+                            <input type="text" id='hobbies' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='What is / are your hobbie(s)' required />
                         </div>
 
                         <div className='mt-3'>
@@ -49,33 +49,33 @@ const LogInPage = () => {
                     <div>
                         <div className='mt-3'>
                             <label htmlFor="schoolName">School Name</label>
-                            <input type="text" id='schoolName' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Enter the name of your school' />
+                            <input type="text" id='schoolName' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Enter the name of your school' required />
                         </div>
 
                         <div className='mt-3'>
                             <label htmlFor="schoolAddress">School Address</label>
-                            <input type="text" id='schoolAddress' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Enter your school address' />
+                            <input type="text" id='schoolAddress' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='Enter your school address' required />
                         </div>
 
                         <div className='mt-3'>
                             <label htmlFor="schoolEmail">School Email</label>
-                            <input type="email" id='schoolEmail' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='School email' />
+                            <input type="email" id='schoolEmail' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='School email' required />
                         </div>
 
                         <div className='mt-3'>
                             <label htmlFor="teacherName">Name of teacher in charge</label>
-                            <input type="email" id='teacherName' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder="Teacher's name" />
+                            <input type="email" id='teacherName' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder="Teacher's name" required />
                         </div>
 
                         <div className='mt-3'>
                             <label htmlFor="tEmail">Teacher's email</label>
-                            <input type="email" id='tEmail' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder="Enter teacher's email" />
+                            <input type="email" id='tEmail' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder="Enter teacher's email" required />
                         </div>
 
                     
                         <div className='mt-3'>
                             <label htmlFor="phoneNumber">Teacher's Phone Number</label>
-                            <input type="text" id='phoneNumber' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='What is / are your hobbie(s)' />
+                            <input type="text" id='phoneNumber' className='block focus:outline-none bg-transparent border-2 focus:border-t-0 focus:border-x-0 border-[#0106a0] rounded-md focus:rounded-none w-full mt-2 p-1 focus:ring-0 caret-[#0106a0] placeholder-[#54c4cf]' placeholder='What is / are your hobbie(s)' required />
                         </div>
                     </div>
                 </fieldset>
