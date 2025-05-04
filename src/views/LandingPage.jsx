@@ -8,7 +8,7 @@ const LandingPage = () => {
     <main>
       {/* <HeroSection /> */}
         <HeroSection />
-        <IndustriesServed />
+        <IndustriesServed className="bg-white" />
         <ManagementSection />
         <NewsEvent />
     </main>
