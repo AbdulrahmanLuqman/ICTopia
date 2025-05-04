@@ -1,130 +1,132 @@
-import { useState, useEffect } from "react";
-import { SlArrowLeft } from "react-icons/sl";
-import { SlArrowRight } from "react-icons/sl";
-
+import { useState, useEffect, useCallback } from "react";
+import { useSwipeable } from "react-swipeable"; // Import swipe handler
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const HeroSection = () => {
   const slides = [
     {
       id: 1,
       image: "/images/sec-students.jpg",
-      heading: "Slide One",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
+      heading: "Innovate. Complete. Excel. Create",
+      description:
+        "Empowering the next generation of ICT leaders and disruptors.",
     },
     {
       id: 2,
       image: "/images/programing.jpg",
-      heading: "Slide Two",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
+      heading: "Shaping the Future of Tech Innovation",
+      description:
+        "A platform for creative minds to redefine digital innovation.",
     },
     {
       id: 3,
       image: "/images/code.jpg",
-      heading: "Slide Three",
+      heading: "Where Innovation Meets Opportunity",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto reiciendis totam",
+        "Empowering the next generation of ICT leaders and disruptors.",
     },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  }, [slides.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  }, [slides.length]);
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
+  }, [nextSlide]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "ArrowRight") nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [nextSlide, prevSlide]);
+
+  // Swipe Handlers
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    preventScrollOnSwipe: true,
+    trackTouch: true,
+    trackMouse: false,
   });
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
-
-  const handleTouchStart = (e) => {
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 50) {
-    nextSlide();
-  }
-    if (touchStart - touchEnd < -50) {
-      prevSlide();
-    }
-  };
-  
-
-
   return (
-    <>
-      <div className="relative w-full h-[600px] overflow-hidden lg:h-[650px]">
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <img
-              src={slide.image}
-              alt={slide.heading}
-              className="w-full h-full lg:h-[850px] object-cover brightness-50"
-            />
-            <div className="absolute inset-0 mx-5 my-20 bg-white bg-opacity-60 justify-center p-4 md:w-[550px] md:ml-12 md:px-8 lg:w-[650px] lg:ml-20 lg:px-12">
-              <div className="my-20 text-left font-bold text-black ">
-                <h2 className="text-4xl my-4 md:5xl lg:text-6xl">
-                  {slide.heading}
-                </h2>
-                <p className="text-lg">{slide.description}</p>
-                <div className="bg-[#2e3192] h-1 my-4"></div>
-              </div>
-              <button className="flex items-center justify-center gap-8 border-2 border-[#2e3192] py-3 px-8 w-1/2 text-[#2e3192] rounded-lg font-extrabold">
+    <div
+      {...handlers}
+      className="relative w-full h-[500px] overflow-hidden md:h-[550px] lg:h-[630px]"
+    >
+      {slides.map((slide, index) => (
+        <div
+          key={slide.id}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentSlide ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <img
+            src={slide.image}
+            alt={slide.heading}
+            className="w-full h-full lg:h-[850px] object-cover object-center brightness-50"
+          />
+          <div className="absolute inset-0 grid mx-6 my-28 bg-white bg-opacity-50 p-4 sm:w-[500px] sm:px-6 md:w-[550px] md:ml-12 md:px-8 lg:w-[650px] lg:ml-20 lg:px-12">
+            <div className="text-left font-bold text-black m-auto">
+              <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-[40px]">
+                {slide.heading}
+              </h2>
+              <p className="mt-2 text-sm sm:text-base lg:text-lg">
+                {slide.description}
+              </p>
+              <div className="bg-[#2e3192] h-0.5 my-4 lg:h-1 lg:my-6"></div>
+              <button className="flex items-center gap-2 border-2 border-[#2e3192] p-3 text-[#2e3192] text-xs rounded-lg font-bold lg:text-sm">
                 FIND MORE
-                <SlArrowRight />
+                <SlArrowRight className="w-4 h-4" />
               </button>
             </div>
           </div>
-        ))}
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 border-2 border-gray-400 rounded-lg bg-opacity-40 text-black p-5 ml-2 hover:bg-white hover:bg-opacity-70 transition-all"
-        >
-          <SlArrowLeft className="w-6 h-6 text-white" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 border-2 border-gray-400 rounded-lg text-black p-5 mr-2 hover:bg-white hover:bg-opacity-50 transition-all"
-        >
-          <SlArrowRight className="w-6 h-6 text-white" />
-        </button>
-        <div className="absolute bottom-3 w-full flex justify-center space-x-2 p-4">
-          {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentSlide(idx)}
-              className={`h-3 w-3 rounded-full border-2 ${
-                currentSlide === idx ? "bg-white" : ""
-              }`}
-            ></button>
-          ))}
         </div>
-      </div>
-    </>
-  );
+      ))}
 
+      {/* Navigation Buttons */}
+      <button
+        aria-label="Previous Slide"
+        onClick={prevSlide}
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 border-2 border-gray-400 rounded-lg bg-opacity-40 text-black p-3 ml-2 hover:bg-white hover:bg-opacity-70 transition-all lg:p-4"
+      >
+        <SlArrowLeft className="w-4 h-4 text-white lg:w-5 lg:h-5" />
+      </button>
+      <button
+        aria-label="Next Slide"
+        onClick={nextSlide}
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 border-2 border-gray-400 rounded-lg text-black p-3 mr-2 hover:bg-white hover:bg-opacity-50 transition-all lg:p-4"
+      >
+        <SlArrowRight className="w-4 h-4 text-white lg:w-5 lg:h-5" />
+      </button>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-3 w-full flex justify-center space-x-2 p-4">
+        {slides.map((_, idx) => (
+          <button
+            key={idx}
+            aria-label={`Go to slide ${idx + 1}`}
+            onClick={() => setCurrentSlide(idx)}
+            className={`h-2 w-2 rounded-full border-2 transition-all lg:h-3 lg:w-3 ${
+              currentSlide === idx ? "bg-white w-4 lg:w-5" : "opacity-50"
+            }`}
+          ></button>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default HeroSection;

@@ -1,7 +1,11 @@
-import Header from "../../components/AboutUsComponents/Contacts/Header"
+import ContactPage from "../../components/AboutUsComponents/ContactComponents/ContactPage"
 
 const Contact = () => {
-  return <main><Header /></main>
+  return (
+    <main>
+      <ContactPage />
+    </main>
+  )
 }
 
-export default Contact
+export default Contact;

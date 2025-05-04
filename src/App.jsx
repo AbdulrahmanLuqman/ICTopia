@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom"
 import LandingPage from "./views/LandingPage"
-
 import AboutUs from "./views/AboutUs/AboutUs"
 import Overview from "./views/AboutUs/Overview"
 import History from "./views/AboutUs/History"
@@ -9,21 +8,16 @@ import PersonalBio from "./views/AboutUs/PersonalBio"
 import TeamMembers from "./views/AboutUs/TeamMembers"
 import Location from "./views/AboutUs/Location"
 import Contact from "./views/AboutUs/Contact"
-
 import Services from "./views/Service/Services"
 import Projects from "./views/Projects"
 import Blog from "./views/Blog"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Register from "./views/RegisterPage"
 import Faq from "./views/Service/Faq"
 import ScrollToTop from "./ScrollToTop"
-
 import Industry from "./views/Industry"
 
-// #0106a0 dark blue
-// #54c4cf green
-// #2e3192 faint blue
-// #0058ea light blue
 
 const App = () => {
 
@@ -33,7 +27,6 @@ const App = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-
         <Route path="/about-us" element={<AboutUs/>} />
         <Route path="/about-us/overview" element={<Overview/>} />
         <Route path="/about-us/history" element={<History/>} />
@@ -49,6 +42,8 @@ const App = () => {
         <Route path="/projects" element={<Projects/>} />
         <Route path="/blogs" element={<Blog/>} />
         <Route path="/industry" element={<Industry/>} />
+
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>
