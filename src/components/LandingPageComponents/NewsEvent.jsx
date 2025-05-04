@@ -1,9 +1,5 @@
 import { CiCirclePlus } from "react-icons/ci"
 
-
-// import { GoDotFill } from "react-icons/go"
-
-
 const NewsEvent = () => {
   return (
     <div>
@@ -18,7 +14,6 @@ const NewsEvent = () => {
              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
             </p>
           </div>
-
         </div>
 
         <section className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-5 lg:gap-5">
@@ -33,58 +28,68 @@ const NewsEvent = () => {
             </div>
           </div>
 
-          <div className="flex bg-white">
-            <div className="bg-event1 bg-cover w-96">
+          <div className="grid grid-cols-3 bg-white">
+            <div className="bg-event1 bg-cover col-span-1">
               <a href="#"><div className="hover:bg-black opacity-60 h-[100%] w-[100%]">
                 <CiCirclePlus />
               </div></a>
             </div>
-            <div className="p-4">
+            <div className="p-4 col-span-2">
               <div className="flex gap-2 text-xs align-middle ">
                 <p>June 8, 2025 | Category: Competition Updates</p> 
               </div>
-              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Meet the Minds Behind the Innovation  </a></h1>
+              <h1 className="text-xl font-bold text-black py-1">
+                <a href="#" className="hover:text-blue-600">
+                  Meet the Minds Behind the Innovation  
+                </a>
+              </h1>
               <p className="text-xs md:text-base lg:text-xs font-normal">
-              Get an exclusive look at the groundbreaking projects competing for the top prize. Witness creativity, teamwork, and problem-solving in action.
+                Get an exclusive look at the groundbreaking projects competing for the top prize. Witness creativity, teamwork, and problem-solving in action.
               </p>
             </div>
-
           </div>
 
-          <div className="flex bg-white">
-            <div className="bg-event2 bg-cover w-96">
+          <div className="grid grid-cols-3 bg-white">
+            <div className="bg-event2 bg-cover col-span-1">
               <a href="#"><div className="hover:bg-black opacity-60 h-[100%] w-[100%]">
                 <CiCirclePlus />
               </div></a>
             </div>
-            <div className="p-4">
+            <div className="p-4 col-span-2">
               <div className="flex gap-2 text-xs align-middle ">
-                <p>June 8, 2025 | Category: Tech Insights</p>
+                <p>June 8, 2025 | Category: Tech Insights</p> 
               </div>
-              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Exploring AI & Emerging Technologies</a></h1>
+              <h1 className="text-xl font-bold text-black py-1">
+                <a href="#" className="hover:text-blue-600">
+                  Exploring AI & Emerging Technologies
+                </a>
+              </h1>
               <p className="text-xs md:text-base lg:text-xs font-normal">
-              From machine learning breakthroughs to cybersecurity advancements, stay updated with the latest trends shaping the ICT landscape.
+                From machine learning breakthroughs to cybersecurity advancements, stay updated with the latest trends shaping the ICT landscape.
               </p>
             </div>
           </div>
 
-          <div className="flex bg-white justify-evenly">
-            <div className="bg-event3 bg-cover w-96">
-              <a href="#"><div className="hover:bg-black hover:duration-150 hover:ease-linear opacity-60 h-[100%] w-[100%]">
-                <CiCirclePlus className="z-10"/>
+          <div className="grid grid-cols-3 bg-white">
+            <div className="bg-event3 col-span-1 bg-cover">
+              <a href="#"><div className="hover:bg-black opacity-60 h-[100%] w-[100%]">
+                <CiCirclePlus />
               </div></a>
             </div>
-            <div className="p-4">
+            <div className="col-span-2 p-4">
               <div className="flex gap-2 text-xs align-middle ">
-                <p>June 8, 2025 | Category: Digital Transformation</p>
+                <p>June 8, 2025 | Category: Digital Transformation</p> 
               </div>
-              <h1 className="text-xl font-bold text-black py-1"><a href="#" className="hover:text-blue-600">Standard digital news</a></h1>
+              <h1 className="text-xl font-bold text-black py-1">
+                <a href="#" className="hover:text-blue-600">
+                  Standard digital news
+                </a>
+              </h1>
               <p className="text-xs md:text-base lg:text-xs font-normal">
-              Join us as we honor the brightest minds in technology. Discover the winning innovations that will redefine the future.
+                Join us as we honor the brightest minds in technology. Discover the winning innovations that will redefine the future. 
               </p>
             </div>
           </div>
-
         </section>
       </section>
 
