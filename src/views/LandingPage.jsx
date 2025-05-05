@@ -1,14 +1,14 @@
 import HeroSection from "../components/LandingPageComponents/HeroSection"
+import ServicesSection from "../components/LandingPageComponents/ServicesSection"
 import ManagementSection from "../components/LandingPageComponents/ManagementSection"
 import NewsEvent from "../components/LandingPageComponents/NewsEvent"
-import IndustriesServed from "../components/ServicesComponents/IndustriesServed"
 
 const LandingPage = () => {
   return (
     <main>
       {/* <HeroSection /> */}
         <HeroSection />
-        <IndustriesServed className="bg-white" />
+        <ServicesSection />
         <ManagementSection />
         <NewsEvent />
     </main>

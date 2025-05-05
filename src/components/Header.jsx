@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 import DesktopNavbar from "./DesktopNavbar"
 import MobileNavbar from "./MobileNavbar"
@@ -20,7 +21,9 @@ const Header = () => {
                 <MaterialSymbolsLightCloseRounded  className={`md:text-4xl text-3xl ${showNav ? "block" : "hidden"}`}/>
             </div>
 
-            <img src={logo} alt="logo" className="lg:w-[200px] w-[120px]"/> 
+            <Link to="/" className="flex items-center gap-2">
+                <img src={logo} alt="logo" className="lg:w-[200px] w-[120px]"/> 
+            </Link>
             <div className="lg:flex lg:gap-8 hidden">
                 <div className="flex gap-3 items-center">
                     <FaClock className="text-3xl text-[#0106a0]"/>
@@ -33,7 +36,7 @@ const Header = () => {
                     <FaPhone className="text-3xl text-[#0106a0]"/>
                     <div>
                         <p className="text-[11px] font-semibold text-[#0106a0]">CALL US:</p>
-                        <p className="text-[12px]">&#40;+234&#41; 802 694 4449</p>
+                        <a href="tel:+234029285309" className="text-[12px]">&#40;+234&#41; 902 928 5309</a>
                     </div>
                 </div>
             </div>
