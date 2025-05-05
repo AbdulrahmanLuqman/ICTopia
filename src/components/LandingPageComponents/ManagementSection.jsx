@@ -103,12 +103,12 @@ const Management = () => {
                 <p className="md:text-[24px] text-[16px]">— Inspired by Henry Edward Armstrong</p>
             </div>
             <div className="w-full flex md:items-end md:flex-row flex-col gap-[1rem] bg- justify-between py-[1rem] lg:px-[6rem] md:px-[3rem] px-[1rem] bg-[#0106a0]">
-                <p className="md:text-[20px] text-[10px] font-[500] text-white md:w-[80%] full"><span className='text-bold md:text-[30px] text-[20px]'>Looking for a First-Class Tech Innovation Partner?</span> <br /><br/>
-Join ICTOPIA, where groundbreaking ideas meet real-world impact. Whether you're a student, developer, or entrepreneur, our competition is the perfect platform to showcase your skills, connect with industry experts, and drive technological advancement.
-<br />
-Get in Touch
-Ready to be part of the future of ICT? Contact us today!?</p>
-                <div className="flex items-center justify-center bg-[#54c4cf] border-[2px] border-[#54c4cf] lg:px-[2rem] lg:py-[0.8rem] px-[1rem] py-[0.4rem] rounded-[5px] text-white lg:text-xl text-[10px] md:font-[500] hover:bg-[#0106a0] w-fit">CONTACT US</div>
+                <p className="text-sm text-white md:w-[80%] lg:text-base"><span className='font-semibold text-lg'>Looking for a First-Class Tech Innovation Partner?</span> <br /><br/>
+                Join ICTOPIA, where groundbreaking ideas meet real-world impact. Whether you're a student, developer, or entrepreneur, our competition is the perfect platform to showcase your skills, connect with industry experts, and drive technological advancement.
+                <br />
+                Get in Touch
+                Ready to be part of the future of ICT? Contact us today!?</p>
+                <div className="flex items-center justify-center bg-[#54c4cf] border-[2px] border-[#54c4cf] lg:px-[1rem] lg:py-[0.8rem] px-[0.5rem] py-[0.4rem] rounded-[5px] text-white lg:text-lg md:font-[500] hover:bg-[#0106a0] w-fit">CONTACT US</div>
             </div>
         </div>
     );

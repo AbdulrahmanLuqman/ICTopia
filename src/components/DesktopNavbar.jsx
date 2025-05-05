@@ -3,11 +3,8 @@
 // #2e3192 faint blue
 // #0058ea light blue
 
-import { Link, useLocation } from "react-router-dom"
-import RiTwitterXFill from "./Icons/RiTwitterXFill"
-import MdiInstagram from "./Icons/MdiInstagram"
-import HugeiconsFacebook02 from "./Icons/HugeiconsFacebook02"
-import PhLinkedinLogo from "./Icons/PhLinkedinLogo"
+import { Link, useLocation } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 
 const Navbar = () => {
   const location = useLocation()
@@ -43,40 +40,106 @@ const Navbar = () => {
     }
   ]
   return (
-    <nav className={`lg:bg-[#0106a0] lg:w-full lg:px-20 lg:flex lg:justify-between hidden md:px-6 px-4 ${window.scrollY >= 120 ? "sticky" : ""}`}>
+    <nav
+      className={`lg:bg-[#0106a0] lg:w-full lg:px-20 lg:flex lg:justify-between hidden md:px-6 px-4 ${
+        window.scrollY >= 120 ? "sticky" : ""
+      }`}
+    >
       <ul className="flex gap-8">
-        <li className={`px-3 pb-3 mt-4 ${location.pathname === "/" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/">Home</Link></li>
-        <li className={`nav px-3 pb-3 mt-4 relative ${location.pathname === "/about-us" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}>
+        <li
+          className={`px-3 pb-3 mt-4 ${
+            location.pathname === "/"
+              ? "bg-white text-[navy] font-semibold"
+              : "text-[whitesmoke]"
+          }`}
+        >
+          <Link to="/">Home</Link>
+        </li>
+        <li
+          className={`nav px-3 pb-3 mt-4 relative ${
+            location.pathname === "/about-us"
+              ? "bg-white text-[navy] font-semibold"
+              : "text-[whitesmoke]"
+          }`}
+        >
           <Link to="/about-us">About Us</Link>
 
           <div className="subnav absolute hidden z-50">
-            {aboutUsNavs.map((aboutUsNav) => 
-            <Link to={aboutUsNav.linkTo} key={Math.random()} className="p-[10px] border-b">{aboutUsNav.name}</Link>
-            )}
+            {aboutUsNavs.map((aboutUsNav) => (
+              <Link
+                to={aboutUsNav.linkTo}
+                key={Math.random()}
+                className="p-[10px] border-b"
+              >
+                {aboutUsNav.name}
+              </Link>
+            ))}
           </div>
         </li>
-        <li className={`nav px-3 pb-3 mt-4 relative ${location.pathname === "/services" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}>
+        <li
+          className={`nav px-3 pb-3 mt-4 relative ${
+            location.pathname === "/services"
+              ? "bg-white text-[navy] font-semibold"
+              : "text-[whitesmoke]"
+          }`}
+        >
           <Link to="/services">Services</Link>
 
           <div className="subnav absolute hidden z-50">
-            <Link to="/services" className="p-[10px] border-b">Overview</Link>
-            <Link to="/services/faqs" className="p-[10px] border-b">FAQ</Link>
+            <Link to="/services" className="p-[10px] border-b">
+              Overview
+            </Link>
+            <Link to="/services/faqs" className="p-[10px] border-b">
+              FAQ
+            </Link>
           </div>
         </li>
-        <li className={`px-3 pb-3 mt-4 ${location.pathname === "/projects" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/projects">Projects</Link></li>
-        <li className={`px-3 pb-3 mt-4 ${location.pathname === "/blogs" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/blogs">Blog/News</Link></li>
+        <li
+          className={`px-3 pb-3 mt-4 ${
+            location.pathname === "/projects"
+              ? "bg-white text-[navy] font-semibold"
+              : "text-[whitesmoke]"
+          }`}
+        >
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li
+          className={`px-3 pb-3 mt-4 ${
+            location.pathname === "/blogs"
+              ? "bg-white text-[navy] font-semibold"
+              : "text-[whitesmoke]"
+          }`}
+        >
+          <Link to="/blogs">Blog/News</Link>
+        </li>
       </ul>
 
       <div className="flex items-center gap-4">
-        <a href=""><RiTwitterXFill className="text-[whitesmoke] text-xl"/></a>
-        <a href=""><MdiInstagram className="text-[whitesmoke] text-xl"/></a>
-        <a href=""><HugeiconsFacebook02 className="text-[whitesmoke] text-xl"/></a>
-        <a href=""><PhLinkedinLogo className="text-[whitesmoke] text-xl"/></a>
+        <Link
+          href="https://www.facebook.com/profile.php?id=61562297253273"
+          target="_blank"
+        >
+          <FaFacebook className="text-white text-xl hover:text-[#54c4cf]" />
+        </Link>
+        <Link
+          href="https://www.facebook.com/profile.php?id=61562297253273"
+          target="_blank"
+        >
+          <FaInstagram className="text-white text-xl hover:text-[#54c4cf]" />
+        </Link>
+        <Link
+          href="https://www.instagram.com/ictopia1?igsh=MTlnYXAzY3dhbnM3Mg=="
+          target="_blank"
+        >
+          <FaLinkedinIn className="text-white text-xl hover:text-[#54c4cf]" />
+        </Link>
 
-        <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[3px] px-3 text-[whitesmoke] text-sm font-semibold">Register Now</button>
+        <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[3px] px-3 text-[whitesmoke] text-sm font-semibold">
+          Register Now
+        </button>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar
