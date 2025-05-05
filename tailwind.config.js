@@ -13,6 +13,7 @@ export default {
         map: "url(/images/map.jpg)",
         bgBio: "url(/images/bg-bio.jpg)",
         serviceBg: "url(/images/serviceBg.jpg)",
+        servicesBg: "url(/images/servicesBg.jpg)",
         subHeaderBg: "url(/images/hero_inner_page.jpg)",
       },
       screens: {

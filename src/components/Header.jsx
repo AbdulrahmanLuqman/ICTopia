@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 import DesktopNavbar from "./DesktopNavbar"
 import MobileNavbar from "./MobileNavbar"
@@ -36,7 +37,7 @@ const Header = () => {
                     <FaPhone className="text-3xl text-[#0106a0]"/>
                     <div>
                         <p className="text-[11px] font-semibold text-[#0106a0]">CALL US:</p>
-                        <p className="text-[12px]">&#40;+234&#41; 802 694 4449</p>
+                        <a href="tel:+234029285309" className="text-[12px]">&#40;+234&#41; 902 928 5309</a>
                     </div>
                 </div>
             </div>

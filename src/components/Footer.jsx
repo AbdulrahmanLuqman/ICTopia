@@ -9,7 +9,7 @@ import image from "../assets/logo.png"
 const Footer = () => {
   return (
     <div className="md:tracking-wider lg:tracking-normal">
-      <section className="grid lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-14 lg:px-24 py-16   text-white">
+      <section className="grid lg:grid-cols-4 gap-x-6 gap-y-12 bg-map bg-cover bg-fixed px-7 md:px-14 lg:px-24 py-16 text-white">
         <div className="col-span-1">
           <h1 className="text-xs py-1">NIGERIA</h1>
           <h1 className="text-xl font-bold">Headquarters</h1>
@@ -46,6 +46,10 @@ const Footer = () => {
             <img src={location} alt="" className="p-2" />
             <div className="py-2">
               <h1 className="text-xs font-light py-2">OUR NETWORK</h1>
+              <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs pt-1">
+                <a href="tel:+"><MdOutlineLocationOn /></a>
+                <a href="tel:+">Nigeria- +2349029285309</a>  
+              </div>
               <div className="flex items-center gap-2 text-white hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+">
                   <MdOutlineLocationOn />
@@ -184,7 +188,9 @@ const Footer = () => {
               </button>
             </div>
 
-            <img src={image} alt="Logo" />
+            <Link to="/">
+              <img src={image} alt="Logo" />  
+            </Link>
           </div>
 
           <div className="pt-1 lg:pt-10 text-xs">

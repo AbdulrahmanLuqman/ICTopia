@@ -15,24 +15,8 @@ const Navbar = () => {
       name: "Overview"
     },
     {
-      linkTo: "/about-us/history",
-      name: "History"
-    },
-    {
-      linkTo: "/about-us/clients-and-testimonials",
-      name: "Clients & Testimonials"
-    },
-    {
-      linkTo: "/about-us/personal-biography",
-      name: "Personal biography"
-    },
-    {
       linkTo: "/about-us/team-members",
       name: "Team Members"
-    },
-    {
-      linkTo: "/about-us/location",
-      name: "Location"
     },
     {
       linkTo: "/about-us/contact",

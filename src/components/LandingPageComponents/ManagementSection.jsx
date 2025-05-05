@@ -10,7 +10,7 @@ const Management = () => {
             <div className="w-full bg-[#f2f1ed] lg:p-[6rem] md:px-[3rem] md:py-[4rem] lg:py-[8rem] p-[2rem] text-black">
                 <div className="w-full">
                     <h5>LEARN MORE</h5>
-                    <h1 className="md:text-[40px] text-[30px] font-[700] mb-[16px]">Our Leadership & Vision</h1>
+                    <h1 className="md:text-[40px] text-[30px] font-[700] mb-[16px]">Our Core Team</h1>
                     <p className="w-[100px] h-[4px] bg-[#54c4cf] mb-[1rem]"></p>
                     <p className="lg:w-[65%] w-full md:text-[18px] text-[15px] leading-[30px]">At ICTOPIA, our management team is dedicated to fostering innovation, collaboration, and excellence in technology competitions. With expertise spanning software development, AI, cybersecurity, and entrepreneurship, we guide participants toward success. Our mission is to bridge the gap between talent and opportunity, empowering the next generation of tech leaders through hands-on challenges and mentorship</p>
                 </div>
@@ -42,6 +42,7 @@ const Management = () => {
                                 <div className="rounded-full flex items-center justify-center w-[2rem] h-[2rem] border-[3px] border-white absolute top-[50%] left-[50%] transfor translate-y-[-50%] translate-x-[-50%]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M11 13H6q-.425 0-.712-.288T5 12t.288-.712T6 11h5V6q0-.425.288-.712T12 5t.713.288T13 6v5h5q.425 0 .713.288T19 12t-.288.713T18 13h-5v5q0 .425-.288.713T12 19t-.712-.288T11 18z"/></svg></div>
                             </div>
                             <img className="w-full h-full absolute top-0 left-0 z-0" src={team_02} alt="image" />
+                          
                         </div>
                         <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                             <div className="flex flex-col">
@@ -99,16 +100,16 @@ const Management = () => {
             </div>
             <div className="w-full h-fit lg:px-[6rem] md:px-[3rem] px-[2rem] pb-[2rem] top-0 lg:pt-[8rem] md:pt-[4rem] pt-[2rem] bg-[url('../src/image/background-lab-light.jpg')] bg-center bg-cover z-[20] text-white flex flex-col gap-[1rem]">
                 <div className="rounded-[50%] md:w-[5rem] md:h-[5rem] w-[3rem] h-[3rem] flex items-center justify-center bg-[#54c4cf] opacity-100 hover:bg-nill transition-3000 md:mb-[2rem]-[1rem]"><svg xmlns="http://www.w3.org/2000/svg" className="md:w-[48px] w-[24px] md:h-[48px] h-[24px]" width="48" height="48" viewBox="0 0 24 24"><path fill="#ffffff" d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2"/></svg></div>
-                <h1 className="md:text-[40px] text-[25px] font-[500] w-full lg:w-[60%] mt-[1rem]">"Innovations, like hypotheses, should evolve—or be replaced."</h1>
+                <h1 className="md:text-[40px] text-[25px] font-[500] w-full lg:w-[60%] mt-[1rem]">&rdquo;Innovations, like hypotheses, should evolve—or be replaced.&rdquo;</h1>
                 <p className="md:text-[24px] text-[16px]">— Inspired by Henry Edward Armstrong</p>
             </div>
-            <div className="w-full flex md:items-end md:flex-row flex-col gap-[1rem] bg- justify-between py-[1rem] lg:px-[6rem] md:px-[3rem] px-[1rem] bg-[#0106a0]">
-                <p className="text-sm text-white md:w-[80%] lg:text-base"><span className='font-semibold text-lg'>Looking for a First-Class Tech Innovation Partner?</span> <br /><br/>
-                Join ICTOPIA, where groundbreaking ideas meet real-world impact. Whether you're a student, developer, or entrepreneur, our competition is the perfect platform to showcase your skills, connect with industry experts, and drive technological advancement.
-                <br />
-                Get in Touch
-                Ready to be part of the future of ICT? Contact us today!?</p>
-                <div className="flex items-center justify-center bg-[#54c4cf] border-[2px] border-[#54c4cf] lg:px-[1rem] lg:py-[0.8rem] px-[0.5rem] py-[0.4rem] rounded-[5px] text-white lg:text-lg md:font-[500] hover:bg-[#0106a0] w-fit">CONTACT US</div>
+            <div className="grid grid-cols-7 bg-[#5ecfd9] lg:px-[6rem] md:px-[3rem] px-[2rem] pb-[2rem] pt-[2rem] items-center gap-x-[1rem] gap-y-[1rem]">
+<p className="text-[whitesmoke] col-span-6 "><span className="font-semibold md:text-xl">Looking for a First-Class Tech Innovation Partner?</span> <br /><br/>
+Join ICTOPIA, where groundbreaking ideas meet real-world impact. Whether you&apos;re a student, developer, or entrepreneur, our competition is the perfect platform to showcase your skills, connect with industry experts, and drive technological advancement.
+<br />
+Get in Touch
+Ready to be part of the future of ICT? Contact us today!?</p>
+                <a href='tel:+2349029285309' className="rounded cursor-pointer text-[whitesmoke] font-semibold w-fit bg-[#4569d3] text-xl text-center p-3">Contact Us</a>
             </div>
         </div>
     );
