@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useSwipeable } from "react-swipeable"; // Import swipe handler
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const slides = [
@@ -87,10 +88,12 @@ const HeroSection = () => {
                 {slide.description}
               </p>
               <div className="bg-[#2e3192] h-0.5 my-4 lg:h-1 lg:my-6"></div>
-              <button className="flex items-center gap-2 border-2 border-[#2e3192] p-3 text-[#2e3192] text-xs rounded-lg font-bold lg:text-sm">
-                FIND MORE
-                <SlArrowRight className="w-4 h-4" />
-              </button>
+              <Link to="/register">
+                <button className="flex items-center gap-2 border-2 border-[#2e3192] px-3 py-2 text-[#2e3192] text-sm rounded-lg font-bold lg:text-lg">
+                  Register
+                  <SlArrowRight className="w-4 h-4" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

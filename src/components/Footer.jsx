@@ -20,7 +20,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href="tel:+"><FaPhoneAlt className="" /></a>
-            <a href="tel:+2349000000004">+60147442379</a>            
+            <a href="tel:+234029285309" className="text-[12px]">&#40;+234&#41; 902 928 5309</a>            
           </div>
           <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href="#"><LiaLinkSolid /></a>
@@ -80,13 +80,10 @@ const Footer = () => {
               <h1 className="font-bold text-base">Popular Category</h1>
               <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
 
-              <div className="grid grid-cols-2">
+              <div className="flex gap-5 md:gap-1 md:grid grid-cols-1 ">
                 <Link to="/about-us" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">About us</Link>
-                <Link to="/services" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Services</Link>
-                <Link to="/about-us/location" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Location</Link>
                 <Link to="/about-us/contact" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Contact</Link>
                 <Link to="/blogs" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Blog</Link>
-                <Link to="/industry" className="w-fit text-sm py-2 hover:text-blue-400 border-gray-400 border-b-[0.5px]">Industry</Link>
               </div>
             </div>
             
@@ -116,8 +113,6 @@ const Footer = () => {
               <div className="flex gap-4">
                 <Link to="/" className="hover:text-blue-400">Home</Link >
                 <Link to="/about-us" className="hover:text-blue-400">About us</Link >
-                <Link to="/services" className="hover:text-blue-400">Services</Link >
-                <Link to="/projects" className="hover:text-blue-400">Project</Link >
               </div>
             </nav>
           </div>
