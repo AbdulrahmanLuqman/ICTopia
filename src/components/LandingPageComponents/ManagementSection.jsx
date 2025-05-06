@@ -103,13 +103,13 @@ const Management = () => {
                 <h1 className="md:text-[40px] text-[25px] font-[500] w-full lg:w-[60%] mt-[1rem]">&rdquo;Innovations, like hypotheses, should evolve—or be replaced.&rdquo;</h1>
                 <p className="md:text-[24px] text-[16px]">— Inspired by Henry Edward Armstrong</p>
             </div>
-            <div className="grid grid-cols-7 bg-[#5ecfd9] lg:px-[6rem] md:px-[3rem] px-[2rem] pb-[2rem] pt-[2rem] items-center gap-x-[1rem] gap-y-[1rem]">
-<p className="text-[whitesmoke] col-span-6 "><span className="font-semibold md:text-xl">Looking for a First-Class Tech Innovation Partner?</span> <br /><br/>
-Join ICTOPIA, where groundbreaking ideas meet real-world impact. Whether you&apos;re a student, developer, or entrepreneur, our competition is the perfect platform to showcase your skills, connect with industry experts, and drive technological advancement.
-<br />
-Get in Touch
-Ready to be part of the future of ICT? Contact us today!?</p>
-                <a href='tel:+2349029285309' className="rounded cursor-pointer text-[whitesmoke] font-semibold w-fit bg-[#4569d3] text-xl text-center p-3">Contact Us</a>
+            <div className="grid md:grid-cols-7 bg-[#5ecfd9] items-center gap-4 px-6 py-8 lg:px-24 text-justify">
+                <p className="text-[whitesmoke] col-span-6 "><span className="font-semibold md:text-xl">Looking for a First-Class Tech Innovation Partner?</span> <br /><br/>
+                    Join ICTOPIA, where groundbreaking ideas meet real-world impact. Whether you&apos;re a student, developer, or entrepreneur, our competition is the perfect platform to showcase your skills, connect with industry experts, and drive technological advancement.
+                    <br />
+                    Get in Touch. Ready to be part of the future of ICT? Contact us today!?
+                </p>
+                <a href='tel:+2349029285309' className="rounded cursor-pointer text-[whitesmoke] font-semibold w-44 bg-[#4569d3] text-xl text-center p-3">Contact Us</a>
             </div>
         </div>
     );
