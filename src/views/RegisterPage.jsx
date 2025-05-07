@@ -2,8 +2,8 @@ import { FaArrowRight } from "react-icons/fa";
 
 const LogInPage = () => {
   return (
-        <div className='md:py-12 sm:py-8 py-4 md:px-8 px-4 flex items-center justify-center bg-blue-700'>
-            <div className='md:w-[50%] sm:w-[80%] w-full bg-white px-6 py-4 text-black rounded-lg'>
+        <div className='md:py-12 sm:py-8 py-4 md:px-8 xs:px-4 flex items-center justify-center bg-blue-700'>
+            <div className='md:w-[50%] sm:w-[80%] w-full bg-white sm:px-6 px-2 py-4 text-black rounded-lg'>
                 <form action="https://formspree.io/f/xblgjvoy" method="post" className='w-full '>
                     <fieldset>
                         <legend className='text-2xl'>Personal Information</legend>
