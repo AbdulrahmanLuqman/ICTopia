@@ -29,7 +29,7 @@ const MobileNavbar = ({showNav}) => {
           </div>
         </li>
         
-        <li className={`text-sm ${location.pathname === "/blogs" ? "text-[navy] font-bold" : "text-gray-700"}`}><Link to="/blogs">Blog/News</Link></li>
+        <li className={`text-sm ${location.pathname === "/register" ? "text-[navy] font-bold" : "text-gray-700"}`}><Link to="/register">Register</Link></li>
       </ul>
 
       <div className="flex flex-col gap-6 items-center">
@@ -51,7 +51,7 @@ const MobileNavbar = ({showNav}) => {
       </div>
 
       <div className="flex flex-col items-center gap-7">
-        <button className="bg-[#54c4cf] hover:text-[rgb(0,0,128)] transition-all duration-1000 py-[2px] px-3 text-[whitesmoke] text-sm font-semibold rounded-md"><Link to="/register">Register</Link></button>
+        {/* <button className="bg-[#54c4cf] hover:text-[rgb(0,0,128)] transition-all duration-1000 py-[2px] px-3 text-[whitesmoke] text-sm font-semibold rounded-md"><Link to="/register">Register</Link></button> */}
         <div className="flex gap-4">
          <a href="https://www.facebook.com/share/15oEKg5tux/" target="_blank">
             <FaFacebookF className="text-[#0106a0] text-xl"/>
