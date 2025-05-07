@@ -52,7 +52,7 @@ const Navbar = () => {
           <FaLinkedinIn className="text-[whitesmoke] text-xl"/>
         </a>
 
-        {/* <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[3px] px-3 text-[whitesmoke] text-sm font-semibold rounded-md"><Link to="/register">Register</Link></button> */}
+        <button className="bg-[#54c4cf] hover:text-[navy] transition-all duration-1000 py-[3px] px-3 text-[whitesmoke] text-sm font-semibold rounded-md"><Link to="/register">Register</Link></button>
       </div>
     </nav>
   )
