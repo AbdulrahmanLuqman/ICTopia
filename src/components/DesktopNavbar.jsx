@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
         </li>
         
-        <li className={`px-3 pb-3 mt-4 ${location.pathname === "/blogs" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/blogs">Blog/News</Link></li>
+        <li className={`px-3 pb-3 mt-4 ${location.pathname === "/register" ? "bg-white text-[navy] font-semibold" : "text-[whitesmoke]"}`}><Link to="/register">Register</Link></li>
       </ul>
 
       <div className="flex items-center gap-4">
