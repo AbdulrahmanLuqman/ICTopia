@@ -75,7 +75,7 @@ const Footer = () => {
 
       <section className="bg-[#f2f1ed]">
         <div className="pt-16 pb-2 px-7 md:px-14 lg:px-28">
-          <div className="grid lg:grid-cols-3 pb-8 gap-14">
+          <div className="grid lg:grid-cols-3 pb-8 gap-20">
             <div className="">
               <h1 className="font-bold text-base">Popular Category</h1>
               <div className="w-16 bg-blue-400 h-[2px] rounded-lg my-2"></div>
