@@ -1,9 +1,15 @@
 import team_01 from '/images/biography.jpg'
 import team_02 from '/images/abdulhameed.jpg'
 import team_03 from '/images/abdulmuiz.jpg'
+import { Link, useLocation } from 'react-router-dom'
 
-const Management = () => {   
-
+const Management = () => {  
+    const location = useLocation();
+    const locate =
+        {
+            linkTo: "/about-us/team-members",
+            name: "Team Members"
+          }
     return (
         <div className="w-full h-fit overflow-hidden">
             <div className="w-full bg-[#f2f1ed] lg:p-[6rem] md:px-[3rem] md:py-[4rem] lg:py-[8rem] p-[2rem] text-black">
@@ -76,7 +82,7 @@ const Management = () => {
                         </div>
                     </div>
                 </div>
-                <button className="w-[6rem] h-[3rem] rounded-[10px] flex items-center justify-center text-white hover:text-[#2e3192] bg-[#54c4cf] mt-[2rem]">View All</button>
+                <button className="w-[6rem] h-[3rem] rounded-[10px] flex items-center justify-center text-white hover:text-[#2e3192] bg-[#54c4cf] mt-[2rem]"><Link to="/about-us/team-members">View All</Link></button>
             </div>
             <div className="w-full h-fit lg:px-[6rem] md:px-[3rem] px-[2rem] pb-[2rem] top-0 lg:pt-[8rem] md:pt-[4rem] pt-[2rem] bg-[url('../src/image/background-lab-light.jpg')] bg-center bg-cover z-[20] text-white flex flex-col gap-[1rem]">
                 <div className="rounded-[50%] md:w-[5rem] md:h-[5rem] w-[3rem] h-[3rem] flex items-center justify-center bg-[#54c4cf] opacity-100 hover:bg-nill transition-3000 md:mb-[2rem]-[1rem]"><svg xmlns="http://www.w3.org/2000/svg" className="md:w-[48px] w-[24px] md:h-[48px] h-[24px]" width="48" height="48" viewBox="0 0 24 24"><path fill="#ffffff" d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2"/></svg></div>
