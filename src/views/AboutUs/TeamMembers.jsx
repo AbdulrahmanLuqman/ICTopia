@@ -3,7 +3,7 @@ import TeamMate from "../../components/AboutUsComponents/Team";
 const TeamMembers = () => {
 
   const [team, setTeam] = useState([
-    {name:"Mr Muhsin Anjorin", role:"Project Manager", image:"/anjorin.jpg", id:1},
+    {name:"Mr Muhsin Anjorin", role:"Project Manager", image:"/.jpg", id:1},
     {name:"Mr Hammed Sanni", role:"Team Lead", image:"/images/abdulhamid.jpg", id:2},
     {name:"Mr Abdulmuiz Olajire", role:"Media Lead", image:"/images/abdulmuiz.jpg", id:3},
     {name:" Mr Abdulrahman Luqman", role:"Lead, Web Team", image:"/images/luqman.jpg", id:4},
