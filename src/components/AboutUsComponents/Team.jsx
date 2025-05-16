@@ -13,7 +13,7 @@ const TeamMate = (props) => {
                     </div>
                     <div className="w-full h-[35%] p-[1rem] bg-white flex flex-col justify-between">
                        <div className="flex-col flex">
-                            <h3 className="text-[15px] font-[500]">{team.name}</h3>
+                            <h3 className="text-[20px] font-[500]">{team.name}</h3>
                             <p>{team.role}</p>
                        </div>
                         <div className="flex items-center gap-[10px]">
