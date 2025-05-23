@@ -262,7 +262,7 @@ const OverviewSection = () => {
             <p>PLAN</p>
             <ProgressBar progress={progress2} />
             <p className="mb-4 absolute top-8 right-3 lg:top-10">
-              {progress2}%
+              {progress2} %
             </p>
           </div>
           <div className="relative grid gap-2 pb-3">
