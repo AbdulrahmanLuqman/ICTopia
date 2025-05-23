@@ -3,16 +3,16 @@ import TeamMate from "../../components/AboutUsComponents/Team";
 const TeamMembers = () => {
 
   const [team, setTeam] = useState([
-    {name:"Mr Muhsin Anjorin", role:"Project Manager", image:"/anjorin.jpg", id:1},
-    {name:"Mr Hammed Sanni", role:"Team Lead", image:"/images/abdulhamid.jpg", id:2},
-    {name:"Mr Abdulmuiz Olajire", role:"Media Lead", image:"/images/abdulmuiz.jpg", id:3},
-    {name:" Mr Abdulrahman Luqman", role:"Lead, Web Team", image:"/images/luqman.jpg", id:4},
-    {name:"Mr Anas Aliu", role:"Member, Web Team", image:"/images/anas.jpg", id:5},
-    {name:"Mr Abdulazeez Abdulganiyu", role:"Member, Web Team", image:"/images/abdulazeez.jpg", id:6},
-    {name:"Mr Fawaz Makinde", role:"Member, Web Team", image:"/images/fawaz.jpg", id:7},
-    {name:"Mr Stanley Meruo", role:"Memer, Web Team", image:"/images/stanley.jpg", id:8},
-    {name:"Mr Jimoh Abdulwaris", role:"Member, Program Team", image:"/images/waris.jpg", id:9},
-    {name:"Mr Abdulrasheed Brimah", role:"Member, Program Team", image:"/images/brimah.jpg", id:10},
+    {name:"Mr Muhsin Anjorin", role:"Project Manager", linkedIn:"https://www.linkedin.com/in/anjorin4us", x:"https://twitter.com/anjorin4us", image:"/images/biography.jpg", id:1},
+    {name:"Mr Hammed Sanni", role:"Team Lead", linkedIn:"https://www.linkedin.com/in/hammed-sanni-45b6992b7/", x:"https://twitter.com/HammedSanni5", image:"/images/abdulhamid.jpg", id:2},
+    {name:"Mr Abdulmuiz Olajire", role:"Media Lead", linkedIn: "#", x:"#", image:"/images/abdulmuiz.jpg", id:3},
+    {name:" Mr Abdulrahman Luqman", role:"Lead, Web Team", linkedIn:"https://www.linkedin.com/in/a-luqman-80243a23a/", x:"https://x.com/luqmanola60", image:"/images/luqman.jpg", id:4},
+    {name:"Mr Anas Aliu", role:"Member, Web Team", linkedIn:"https://www.linkedin.com/in/anas-aliu-694209204/", x:"#", image:"/images/anas.jpg", id:5},
+    {name:"Mr Abdulazeez Abdulganiyu", role:"Member, Web Team", linkedIn:"https://www.linkedin.com/in/abdulazeez-abdulganiyu-pactware/", x:"https://x.com/pactwareTech", image:"/images/abdulazeez.jpg", id:6},
+    {name:"Mr Fawaz Makinde", role:"Member, Web Team", linkedIn:"https://www.linkedin.com/in/fawwaz-makinde-56b776288/", x:"#", image:"/images/fawaz.jpg", id:7},
+    {name:"Mr Stanley Meruo", role:"Memer, Web Team", linkedIn:"https://www.linkedin.com/in/stanley-meruo-062122146/", x:"#", image:"/images/stanley.jpg", id:8},
+    {name:"Mr Jimoh Abdulwaris", role:"Member, Program Team", linkedIn:"https://www.linkedin.com/in/jimoh-abdulwaris/", x:"#", image:"/images/waris.jpg", id:9},
+    {name:"Mr Abdulrasheed Brimah", role:"Member, Program Team", linkedIn:"https://www.linkedin.com/in/abdul-rasheed-brimah-63a34827a/", x:"#", image:"/images/brimah.jpg", id:10},
   ]);
 
 
