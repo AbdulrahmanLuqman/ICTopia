@@ -262,7 +262,7 @@ const OverviewSection = () => {
             <p>GROWTH</p>
             <ProgressBar progress={progress3} />
             <p className="mb-4 absolute top-8 right-3 lg:top-10">
-              {progress3}%
+              {progress3} %
             </p>
           </div>
         </div>
