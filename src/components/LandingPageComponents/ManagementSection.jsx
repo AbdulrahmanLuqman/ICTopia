@@ -13,9 +13,9 @@ const Management = () => {
           }
     const [profiles,useProfiles] = useState([
         {name:"Mr Muhsin Anjorin", role:"Project Manager", linkedIn:"https://www.linkedin.com/in/anjorin4us", x:"https://twitter.com/anjorin4us", image:"/images/biography.jpg", id:1},
-    {name:"Mr Hammed Sanni", role:"Team Lead", linkedIn:"https://www.linkedin.com/in/hammed-sanni-45b6992b7/", x:"https://twitter.com/HammedSanni5", image:"/images/abdulhamid.jpg", id:2},
-    {name:"Mr Abdulmuiz Olajire", role:"Media Lead", linkedIn: "#", x:"#", image:"/images/abdulmuiz.jpg", id:3},
-    {name:" Mr Abdulrahman Luqman", role:"Lead, Web Team", linkedIn:"https://www.linkedin.com/in/a-luqman-80243a23a/", x:"https://x.com/luqmanola60", image:"/images/luqman.jpg", id:4}
+        {name:"Mr Hammed Sanni", role:"Team Lead", linkedIn:"https://www.linkedin.com/in/hammed-sanni-45b6992b7/", x:"https://twitter.com/HammedSanni5", image:"/images/abdulhamid.jpg", id:2},
+        {name:"Mr Abdulmuiz Olajire", role:"Media Lead", linkedIn: "#", x:"#", image:"/images/abdulmuiz.jpg", id:3},
+        {name:" Mr Abdulrahman Luqman", role:"Lead, Web Team", linkedIn:"https://www.linkedin.com/in/a-luqman-80243a23a/", x:"https://x.com/luqmanola60", image:"/images/luqman.jpg", id:4}
     ]);
     return (
         <div className="w-full h-fit overflow-hidden">
