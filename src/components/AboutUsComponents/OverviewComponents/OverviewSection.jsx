@@ -8,11 +8,14 @@ import ProgressBar from "/src/components/AboutUsComponents/OverviewComponents/Pr
 import "/src/index.css";
 import Button from "./Button";
 import { FiPhoneCall } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const OverviewSection = () => {
   const [progress1, setProgress1] = useState(0);
   const [progress2, setProgress2] = useState(0);
   const [progress3, setProgress3] = useState(0);
+
+  const navigate = useNavigate();
 
   // Increment progress for bar 1
   useEffect(() => {
@@ -127,16 +130,24 @@ const OverviewSection = () => {
         </p>
       </div>
 
-      <div className="grid py-4 px-6 text-white bg-map md:pl-8 lg:flex lg:items-center lg:justify-between lg:px-20">
-        <p className="font-semibold sm:text-lg">
+      <div className="grid gap-2 p-6 text-white bg-map md:pl-8 lg:flex lg:items-center lg:justify-between lg:px-20">
+        <p className="font-semibold text-lg lg:text-xl">
           Looking for a First-Class Scientific Partner?
         </p>
-        <a href="tel:+2349029285309">
-          <Button
-            title="CONTACT US"
-            className="flex items-center gap-2 bg-[#54C4CF] py-3 px-8 ml-60 mt-2 lg:px-12"
-          />
-        </a>
+        <p className="text-sm">
+          Join ICTOPIA, where groundbreaking ideas meet real-world impact.
+          Whether you&apos;re a student, developer, or entrepreneur, our
+          competition is the perfect platform to showcase your skills, connect
+          with industry experts, and drive technological advancement.
+        </p>
+        <p>
+          Get in Touch Ready to be part of the future of ICT? Contact us today!?
+        </p>
+        <Button
+          onclick={() => navigate("/contact") }
+          title="CONTACT US"
+          className="flex items-center gap-2 bg-[#54C4CF] py-3 px-8 mx-auto mt-2 lg:px-12"
+        />
       </div>
 
       <section className="grid gap-2 px-5 py-16 md:px-8 lg:flex lg:px-20 xl:gap-6">
