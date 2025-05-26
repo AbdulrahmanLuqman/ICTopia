@@ -134,7 +134,6 @@ const OverviewSection = () => {
         <p className="font-semibold text-lg lg:text-xl">
           Looking for a First-Class Scientific Partner?
         </p>
-<<<<<<< HEAD
         <p className="text-sm">
           Join ICTOPIA, where groundbreaking ideas meet real-world impact.
           Whether you&apos;re a student, developer, or entrepreneur, our
@@ -149,14 +148,6 @@ const OverviewSection = () => {
           title="CONTACT US"
           className="flex items-center gap-2 bg-[#54C4CF] py-3 px-8 mx-auto mt-2 lg:px-12"
         />
-=======
-        <a href="tel:+2349029285309">
-          <Button
-            title="CONTACT US"
-            className="flex items-center gap-2 bg-[#54C4CF] py-3 px-8 ml-60 mt-2 lg:px-12"
-          />
-        </a>
->>>>>>> origin/master
       </div>
 
       <section className="grid gap-2 px-5 py-16 md:px-8 lg:flex lg:px-20 xl:gap-6">
