@@ -1,9 +1,9 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const Button = ({ type, title, ...props }) => {
+const Button = ({ title, className, onClick }) => {
   return (
     <div>
-      <button type={type} className={props.className}>
+      <button className={className} onClick={onClick}>
         {title}
         <FaArrowRightLong/>
       </button>

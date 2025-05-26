@@ -16,13 +16,13 @@ const Header = () => {
     <header className="lg:static sticky top-0 z-50">
         <div className="w-full bg-[whitesmoke] lg:py-0 py-4 lg:px-20 md:px-6 px-4 flex items-center lg:justify-between">
             
-            <div onClick={()=> setShowNav(!showNav)} className="lg:hidden">
+            <div onClick={()=> setShowNav(!showNav)} className="lg:hidden cursor-pointer">
                 <SolarHamburgerMenuBroken className={`md:text-4xl text-3xl ${showNav ? "hidden" : "block"}`}/>
                 <MaterialSymbolsLightCloseRounded  className={`md:text-4xl text-3xl ${showNav ? "block" : "hidden"}`}/>
             </div>
-
-            <Link to="/" className="flex items-center gap-2">
-                <img src={logo} alt="logo" className="lg:w-[200px] w-[120px]"/> 
+            
+            <Link to="/">
+              <img src={logo} alt="logo" className="lg:w-[200px] w-[120px]"/> 
             </Link>
             <div className="lg:flex lg:gap-8 hidden">
                 <div className="flex gap-3 items-center">
