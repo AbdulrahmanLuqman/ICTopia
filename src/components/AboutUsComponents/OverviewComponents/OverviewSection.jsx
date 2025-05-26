@@ -4,16 +4,11 @@ import Map from "/images/location.png";
 import Project1 from "/images/project-img0.jpg";
 import Project2 from "/images/project-img.jpg";
 import Project3 from "/images/project-img1.jpg";
-import CodeService from "/images/code-services.jpg";
 import ProgressBar from "/src/components/AboutUsComponents/OverviewComponents/ProgressBar";
 import "/src/index.css";
 import Button from "./Button";
-import { SlSettings } from "react-icons/sl";
-import { PiScrewdriver } from "react-icons/pi";
 import { FiPhoneCall } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-
-
 
 const OverviewSection = () => {
   const [progress1, setProgress1] = useState(0);
@@ -52,13 +47,12 @@ const OverviewSection = () => {
     return () => clearInterval(interval);
   }, []);
 
-
   return (
     <div>
       <SubHeader
         title="HOME"
         head="About Us"
-        content="Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs."
+        content="At ICTOPIA, we empower students, individuals and teams through cutting-edge technology competitions, fostering innovation, problem-solving, and real-world applications of ICT skills"
       />
       <section className="lg:flex lg:items-center lg:justify-between lg:px-14">
         <section className="grid gap-2 px-5 py-12 md:px-8">
@@ -68,12 +62,19 @@ const OverviewSection = () => {
           </p>
           <div className="bg-[#54C4CF] w-20 h-1 mt-2 lg:w-24"></div>
           <p className="py-4 md:py-6 text-sm md:text-base lg:w-[420px] xl:w-[600px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
-            maiores rem nam architecto aut enim consequatur beatae voluptas,
-            rerum earum reprehe Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Saepe odio molestiae optio natus corrupti quis
-            mollitia. Repudiandae recusandae quidem atque natus, corrupti sed,
-            temporibus, dolore esse cupiditate quas amet praesentium!
+            ICTOPIA is supported by a diverse network of educators, tech
+            professionals, institutions, and organizations passionate about
+            youth development. Together, we create a thriving ecosystem where
+            students can connect, learn, and grow. From local schools to global
+            tech partners, our network fosters collaboration and continuous
+            learning opportunities. Powered by{" "}
+            <a
+              href="https://dervac.com/"
+              target="_blank"
+              className="text-[#54C4CF] font-medium"
+            >
+              Dervac
+            </a>
           </p>
           <div>
             <Button
@@ -87,32 +88,20 @@ const OverviewSection = () => {
         </div>
       </section>
 
-      <div className="grid gap-6 py-8 px-7 md:flex md:items-center md:justify-between md:gap-12 md:py-10 lg:gap-4 lg:px-20">
-        <div className="flex items-center gap-4">
-          <SlSettings className="text-4xl text-[#54C4CF] md:text-5xl" />
-          <div className="">
-            <p className="text-lg font-semibold">Parts and systems</p>
-            <p className="text-sm">
-              Bring to the table win-win survival strategies.
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center gap-4">
-          <PiScrewdriver className="text-4xl text-[#54C4CF] md:text-5xl" />
-          <div className="">
-            <p className="text-lg font-semibold">Maintenance</p>
-            <p className="text-sm">
-              Capitalise on low hanging fruit to identify ballpark
-            </p>
-          </div>
-        </div>
+      <div className="grid gap-6 py-8 px-7 md:flex md:items-center md:justify-center md:gap-12 md:py-10 lg:gap-4 lg:px-20">
         <div className="flex items-center gap-4">
           <FiPhoneCall className="text-4xl text-[#54C4CF] md:text-5xl" />
           <div className="">
             <p className="text-lg font-semibold">Call center</p>
             <p className="text-sm">
-              Give us a toll free call at <br /> (+1) 800 456324 or (+1) 555
-              456325
+              Give us a toll free call at <br />{" "}
+              <a className="text-[#54C4CF]" href="tel:+2349029285309">
+                +2349029285309
+              </a>{" "}
+              or{" "}
+              <a className="text-[#54C4CF]" href="tel:+60147442379">
+                +60147442379
+              </a>
             </p>
           </div>
         </div>
@@ -129,7 +118,9 @@ const OverviewSection = () => {
         </p>
         <p className="grid gap-2 text-3xl leading-6 md:text-4xl lg:text-5xl lg:gap-1">
           +50
-          <span className="text-sm font-light lg:text-base">PROJECTS</span>
+          <span className="text-sm font-light lg:text-base">
+            PROJECTS SUBMITTED
+          </span>
         </p>
         <p className="grid gap-2 text-3xl leading-6 md:text-4xl lg:text-5xl lg:gap-1">
           +100
@@ -143,6 +134,7 @@ const OverviewSection = () => {
         <p className="font-semibold text-lg lg:text-xl">
           Looking for a First-Class Scientific Partner?
         </p>
+<<<<<<< HEAD
         <p className="text-sm">
           Join ICTOPIA, where groundbreaking ideas meet real-world impact.
           Whether you&apos;re a student, developer, or entrepreneur, our
@@ -157,6 +149,14 @@ const OverviewSection = () => {
           title="CONTACT US"
           className="flex items-center gap-2 bg-[#54C4CF] py-3 px-8 mx-auto mt-2 lg:px-12"
         />
+=======
+        <a href="tel:+2349029285309">
+          <Button
+            title="CONTACT US"
+            className="flex items-center gap-2 bg-[#54C4CF] py-3 px-8 ml-60 mt-2 lg:px-12"
+          />
+        </a>
+>>>>>>> origin/master
       </div>
 
       <section className="grid gap-2 px-5 py-16 md:px-8 lg:flex lg:px-20 xl:gap-6">
@@ -166,16 +166,16 @@ const OverviewSection = () => {
           </p>
           <div className="bg-[#54C4CF] w-20 h-1 mt-2 lg:w-24"></div>
           <p className="py-4 text-sm md:text-base md:py-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
-            maiores rem nam architecto aut enim consequatur beatae voluptas,
-            rerum earum reprehenderit cupiditate officia iure, odit tempora
-            laudantium accusamus a exercitationem!
+            ICTOPIA challenges students to solve real-world problems using
+            technology. Projects include software development, hardware
+            integration, game design, and more.
           </p>
           <p className="text-sm md:text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            natus inventore in quidem perferendis! Autem asperiores minus ullam
-            maiores id beatae voluptas perspiciatis corporis fugit, aut quod ut
-            quasi quos.
+            Students participate in engaging IT quizzes that test and sharpen
+            their knowledge of computer fundamentals, software tools, internet
+            safety, coding concepts, and emerging technologies. These challenges
+            promote critical thinking, speed, and digital literacy in a fun,
+            competitive format
           </p>
           <div className="pb-12">
             <Button
@@ -245,23 +245,23 @@ const OverviewSection = () => {
 
       <section className="grid gap-2 px-5 py-16 bg-map text-white md:px-8 lg:flex lg:items-center lg:justify-between lg:gap-6 lg:px-20 xl:gap-5">
         <div className="lg:w-[500px] xl:w-[620px]">
-          <p className="lg:text-lg">SHOW IT</p>
+          <p className="lg:text-lg">Our Aim</p>
           <p className="text-3xl font-semibold tracking-wide lg:text-4xl">
-            Show More Skills
+            Explore our target
           </p>
           <div className="bg-[#54C4CF] w-20 h-1 mt-2 lg:w-24"></div>
-          <p className="py-4 text-sm md:text-base md:py-6">
+          {/* <p className="py-4 text-sm md:text-base md:py-6">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
             maiores rem nam architecto aut enim consequatur beatae voluptas,
             rerum earum reprehenderit cupiditate officia iure, odit tempora
             laudantium accusamus a exercitationem!
-          </p>
-          <p className="py-4 text-sm md:text-base">
+          </p> */}
+          {/* <p className="py-4 text-sm md:text-base">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
             maiores rem nam architecto aut enim consequatur beatae voluptas,
             rerum earum reprehenderit cupiditate officia iure, odit tempora
             laudantium accusamus a exercitationem!
-          </p>
+          </p> */}
         </div>
         <div className="py-6 font-medium lg:text-lg lg:w-[500px] xl:w-[620px]">
           <div className="relative grid gap-2 pb-3">
@@ -282,69 +282,22 @@ const OverviewSection = () => {
             <p>GROWTH</p>
             <ProgressBar progress={progress3} />
             <p className="mb-4 absolute top-8 right-3 lg:top-10">
-              {progress3}%
+              {progress3} %
             </p>
           </div>
         </div>
       </section>
 
-      <div className="grid py-4 px-6 bg-[#54c4cf] text-white md:pl-8 lg:flex lg:items-center lg:justify-between lg:px-20">
+      <div className="my-20 grid py-4 px-6 bg-[#54c4cf] text-white md:pl-8 lg:flex lg:items-center lg:justify-between lg:px-20">
         <p className="font-semibold sm:text-lg">
           Looking for a reliable & stable partner?
         </p>
-        <Button
-          title="CONTACT US"
-          className="flex items-center gap-2 bg-[#0106a0] py-3 px-8 ml-60 mt-2 lg:px-12"
-        />
-      </div>
-
-      <div className="grid gap-2 px-5 py-14 md:px-8 lg:px-20 lg:flex lg:items-center lg:justify-between lg:gap-8">
-        <div className="">
-          <img
-            src={CodeService}
-            alt=""
-            className="w-full h-auto lg:w-[650px] lg:h-[500px] xl:h-[550px]"
+        <a href="tel:+2349029285309">
+          <Button
+            title="CONTACT US"
+            className="flex items-center gap-2 bg-[#0106a0] py-3 px-8 ml-60 mt-2 lg:px-12"
           />
-        </div>
-
-        <div className="lg:w-[550px] xl:w-[650px]">
-          <p className="text-3xl font-semibold tracking-wide mt-4 lg:text-4xl">
-            Our Services
-          </p>
-          <div className="bg-[#54C4CF] w-20 h-1 mt-2 lg:w-24"></div>
-          <p className="py-4 md:py-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
-            maiores rem nam architecto aut enim consequatur beatae voluptas,
-            rerum earum reprehenderit cupiditate officia iure, odit tempora
-            laudantium accusamus a exercitationem!
-          </p>
-          <p className="">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
-            maiores rem nam architecto aut enim consequatur beatae voluptas,
-            rerum earum reprehenderit cupiditate officia iure, odit tempora
-            laudantium accusamus a exercitationem!
-          </p>
-          <div className="grid gap-6 py-8 px-7 md:flex md:items-center md:justify-between md:gap-12 md:py-10 lg:gap-4 lg:px-0 xl:pt-20">
-            <div className="flex items-center gap-4">
-              <SlSettings className="text-4xl text-[#54C4CF] md:text-5xl lg:text-6xl " />
-              <div className="">
-                <p className="text-lg font-semibold">Parts and systems</p>
-                <p className="text-sm">
-                  Bring to the table win-win survival strategies.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <PiScrewdriver className="text-4xl text-[#54C4CF] md:text-5xl lg:text-6xl" />
-              <div className="">
-                <p className="text-lg font-semibold">Maintenance</p>
-                <p className="text-sm">
-                  Capitalise on low hanging fruit to identify ballpark
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -103,6 +103,7 @@ const MobileNavbar = ({showNav}) => {
             </Link>
           </div>
         </li>
+<<<<<<< HEAD
         <li>
           <div className="flex items-center justify-center">
             <Link
@@ -152,6 +153,10 @@ const MobileNavbar = ({showNav}) => {
         >
           <Link to="/blogs">Blog/News</Link>
         </li>
+=======
+        
+        <li className={`text-sm ${location.pathname === "/register" ? "text-[navy] font-bold" : "text-gray-700"}`}><Link to="/register">Register</Link></li>
+>>>>>>> origin/master
       </ul>
 
       <div className="flex flex-col gap-6 items-center">
