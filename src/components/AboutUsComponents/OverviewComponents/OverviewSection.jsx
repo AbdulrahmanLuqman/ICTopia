@@ -134,15 +134,6 @@ const OverviewSection = () => {
         <p className="font-semibold text-lg lg:text-xl">
           Looking for a First-Class Scientific Partner?
         </p>
-        <p className="text-sm">
-          Join ICTOPIA, where groundbreaking ideas meet real-world impact.
-          Whether you&apos;re a student, developer, or entrepreneur, our
-          competition is the perfect platform to showcase your skills, connect
-          with industry experts, and drive technological advancement.
-        </p>
-        <p>
-          Get in Touch Ready to be part of the future of ICT? Contact us today!?
-        </p>
         <Button
           onclick={() => navigate("/contact") }
           title="CONTACT US"
@@ -279,16 +270,8 @@ const OverviewSection = () => {
         </div>
       </section>
 
-      <div className="my-20 grid py-4 px-6 bg-[#54c4cf] text-white md:pl-8 lg:flex lg:items-center lg:justify-between lg:px-20">
-        <p className="font-semibold sm:text-lg">
-          Looking for a reliable & stable partner?
-        </p>
-        <a href="tel:+2349029285309">
-          <Button
-            title="CONTACT US"
-            className="flex items-center gap-2 bg-[#0106a0] py-3 px-8 ml-60 mt-2 lg:px-12"
-          />
-        </a>
+      <div className="my-5 grid py-4 px-6 text-white md:pl-8 lg:flex lg:items-center lg:justify-between lg:px-20">
+      
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { LiaLinkSolid } from "react-icons/lia";
 import { IoMdMail } from "react-icons/io";
 import { MdOutlineLocationOn } from "react-icons/md";
@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="#">
               <LiaLinkSolid />
             </a>
-            <a href="#">ictopia.dervac.com</a>
+            <a href="#">ictopia.com</a>
           </div>
           <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href="">
@@ -54,13 +54,13 @@ const Footer = () => {
                 <a href="tel:+">
                   <MdOutlineLocationOn />
                 </a>
-                <a href="tel:+">Nigeria- +2349029285309</a>
+                <a href="tel:+2349029285309">Nigeria- +2349029285309</a>
               </div>
               <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+">
                   <MdOutlineLocationOn />
                 </a>
-                <a href="tel:+">Malaysia- +60147442379</a>
+                <a href="tel:+60147442379">Malaysia- +60147442379</a>
               </div>
             </div>
           </div>
