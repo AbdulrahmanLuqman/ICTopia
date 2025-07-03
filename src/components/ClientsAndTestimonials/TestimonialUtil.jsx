@@ -4,8 +4,8 @@ export const Client = [
     {
         image: Image,
         testimony: '"Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize metrics."',
-        position: "Dervac CTO",
-        name: "Anjorin Muhsin"
+        position: "Executive Director",
+        name: "ANJORIN, Ishaq O. Muhsin"
     },
     {
         image: Image,

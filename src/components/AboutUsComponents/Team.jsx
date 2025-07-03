@@ -2,8 +2,8 @@ const TeamMate = (props) => {
     const teams = props.teams
     return (
         <div className="pt-[2rem] w-full grid lg:grid-rows-1 lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-x-[1rem] gap-y-[2rem] items-center">
-            {teams?.map((team) => (
-                <div className="w-[100%] h-[70vh] flex flex-col">
+            {teams?.map((team, idx) => (
+                <div key={idx} className="w-[100%] h-[70vh] flex flex-col">
                     <div className="w-[100%] h-[65%] relative cursor-pointer">
                         <div className="absolute w-full h-full z-20  transition all duration-300 easinout opacity-0 hover:opacity-100">
                             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-0 w-full"></div>

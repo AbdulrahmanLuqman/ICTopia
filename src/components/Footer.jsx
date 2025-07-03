@@ -22,7 +22,7 @@ const Footer = () => {
             <a href="tel:+">
               <FaPhoneAlt className="" />
             </a>
-            <a href="tel:+2349000000004">+60147442379</a>
+            <a href="tel:+2349000000004">+234 903 448 3717</a>
           </div>
           <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs py-0.5">
             <a href="#">
@@ -48,19 +48,19 @@ const Footer = () => {
               <h1 className="text-xs font-light py-2">OUR NETWORK</h1>
               <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+"><MdOutlineLocationOn /></a>
-                <a href="tel:+">Nigeria- +2349029285309</a>  
+                <a href="tel:+">Lagos- +234 902 928 5309</a>  
               </div>
               <div className="flex items-center gap-2 text-white hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+">
                   <MdOutlineLocationOn />
                 </a>
-                <a href="tel:+2349029285309">Nigeria- +2349029285309</a>
+                <a href="tel:+2349029285309">Nigeria- +234 705 733 9535</a>
               </div>
               <div className="flex items-center gap-2 hover:text-blue-400 text-sm lg:text-xs pt-1">
                 <a href="tel:+">
                   <MdOutlineLocationOn />
                 </a>
-                <a href="tel:+60147442379">Malaysia- +60147442379</a>
+                <a href="tel:+60147442379">Malaysia- +60 147 442 379</a>
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@ const Footer = () => {
           <div className="pt-1 lg:pt-10 text-xs">
             <div className="bg-black h-[2px] rounded-sm"></div>
             <nav className="flex flex-col md:flex-row justify-between px-2 gap-y-2 py-3">
-              <h1>Override the digital divide with clickthroughs</h1>
+              <h1>ICTOPIA- Where Innovation Meets Opportunity</h1>
 
               <ul className="flex gap-4">
                 <li className="hover:text-blue-400">Home</li>

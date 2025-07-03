@@ -30,7 +30,7 @@ const MobileNavbar = ({showNav}) => {
         </li>
         
         <li className={`text-sm ${location.pathname === "/register" ? "text-[navy] font-bold" : "text-gray-700"}`}><Link to="/register">Register</Link></li>
-      </ul>
+      </ul> 
 
       <div className="flex flex-col gap-6 items-center">
           <div className="flex flex-col  gap-3 items-center">

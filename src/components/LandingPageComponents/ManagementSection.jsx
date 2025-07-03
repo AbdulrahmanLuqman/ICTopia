@@ -1,22 +1,13 @@
-import team_01 from '/images/biography.jpg'
-import team_02 from '/images/abdulhameed.jpg'
-import team_03 from '/images/abdulmuiz.jpg'
-import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Management = () => {  
-    const location = useLocation();
-    const locate =
-        {
-            linkTo: "/about-us/team-members",
-            name: "Team Members"
-          }
-    const [profiles,useProfiles] = useState([
-        {name:"Mr Muhsin Anjorin", role:"Project Manager", linkedIn:"https://www.linkedin.com/in/anjorin4us", x:"https://twitter.com/anjorin4us", image:"/images/biography.jpg", id:1},
-        {name:"Mr Hammed Sanni", role:"Team Lead", linkedIn:"https://www.linkedin.com/in/hammed-sanni-45b6992b7/", x:"https://twitter.com/HammedSanni5", image:"/images/abdulhamid.jpg", id:2},
-        {name:"Mr Abdulmuiz Olajire", role:"Media Lead", linkedIn: "#", x:"#", image:"/images/abdulmuiz.jpg", id:3},
-        {name:" Mr Abdulrahman Luqman", role:"Lead, Web Team", linkedIn:"https://www.linkedin.com/in/a-luqman-80243a23a/", x:"https://x.com/luqmanola60", image:"/images/luqman.jpg", id:4}
-    ]);
+  
+    const profiles = [
+        {name:"ANJORIN, Ishaq O. Muhsin", role:"Executive Director", linkedIn:"https://www.linkedin.com/in/anjorin4us", x:"https://twitter.com/anjorin4us", image:"/images/biography.jpg", id:1},
+        {name:"Hammed Sanni", role:"Program Officer", linkedIn:"https://www.linkedin.com/in/hammed-sanni-45b6992b7/", x:"https://twitter.com/HammedSanni5", image:"/images/abdulhamid.jpg", id:2},
+        {name:"Abdulmuiz Olajire", role:"Media Lead", linkedIn: "#", x:"#", image:"/images/abdulmuiz.jpg", id:3},
+        {name:" Abdulrahman Luqman", role:"Web Lead", linkedIn:"https://www.linkedin.com/in/a-luqman-80243a23a/", x:"https://x.com/luqmanola60", image:"/images/luqman.jpg", id:4}
+    ];
     return (
         <div className="w-full h-fit overflow-hidden">
             <div className="w-full bg-[#f2f1ed] lg:p-[6rem] md:px-[3rem] md:py-[4rem] lg:py-[8rem] p-[2rem] text-black">
@@ -27,8 +18,8 @@ const Management = () => {
                     <p className="lg:w-[65%] w-full md:text-[18px] text-[15px] leading-[30px]">At ICTOPIA, our management team is dedicated to fostering innovation, collaboration, and excellence in technology competitions. With expertise spanning software development, AI, cybersecurity, and entrepreneurship, we guide participants toward success. Our mission is to bridge the gap between talent and opportunity, empowering the next generation of tech leaders through hands-on challenges and mentorship</p>
                 </div>
                 <div className="pt-[2rem] w-full grid lg:grid-rows-1 lg:grid-cols-4 md:grid-rows-2 md:grid-cols-2 gap-x-[2rem] gap-y-[2rem] items-center lg:mt-[6rem] md:mt-[3rem]">
-                {profiles?.map((team) => (
-                    <div className="w-[100%] h-[70vh] flex flex-col">
+                {profiles?.map((team,idx) => (
+                    <div key={idx}  className="w-[100%] h-[70vh] flex flex-col">
                         <div className="w-[100%] h-[65%] relative cursor-pointer">
                             <div className="absolute w-full h-full z-20  transition all duration-300 easinout opacity-0 hover:opacity-100">
                                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-0 w-full"></div>

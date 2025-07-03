@@ -36,7 +36,7 @@ const Header = () => {
                     <FaPhone className="text-3xl text-[#0106a0]"/>
                     <div>
                         <p className="text-[11px] font-semibold text-[#0106a0]">CALL US:</p>
-                        <a href="tel:+234029285309" className="text-[12px]">&#40;+234&#41; 902 928 5309</a>
+                        <a href="tel:+234029285309" className="text-[12px]">&#40;+234&#41; 903 448 3717</a>
                     </div>
                 </div>
             </div>
